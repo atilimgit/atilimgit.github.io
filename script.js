@@ -1,6 +1,6 @@
 const businesses = [
-    { name: "İşletme 1", address: "Adres 1", district: "Bahçelievler", discount: 10, details: "Detay 1 hakkında bilgi.", logo: "logo1.png" },
-    { name: "İşletme 2", address: "Adres 2", district: "Kızılay", discount: 15, details: "Detay 2 hakkında bilgi.", logo: "logo2.png" },
+    { name: "İşletme 1", address: "Adres 1", district: "Bahçelievler", discount: 10, details: "Detay 1 hakkında bilgi.", logo: "background-image.png" },
+    { name: "İşletme 2", address: "Adres 2", district: "Kızılay", discount: 15, details: "Detay 2 hakkında bilgi.", logo: "background-image.png" },
     { name: "İşletme 3", address: "Adres 3", district: "Tunalı", discount: 5, details: "Detay 3 hakkında bilgi.", logo: "logo3.png" },
     { name: "İşletme 4", address: "Adres 4", district: "Çayyolu", discount: 20, details: "Detay 4 hakkında bilgi.", logo: "logo4.png" },
     { name: "İşletme 5", address: "Adres 5", district: "Ümitköy", discount: 25, details: "Detay 5 hakkında bilgi.", logo: "logo5.png" },
