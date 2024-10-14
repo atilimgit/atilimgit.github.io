@@ -1,19 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background: rgba(0, 0, 0, 0.8) url('background-image.jpg') no-repeat center center fixed; /* Arka plan resmi */
+    background: rgba(0, 0, 0, 0.8) url('background-image.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
-    margin: 0;
-    padding: 20px;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 800px;
-    margin: auto;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
-    background: rgba(51, 51, 51, 0.8); /* İç alan arka planı */
+    background: rgba(51, 51, 51, 0.8);
     padding: 20px;
     border-radius: 10px;
+    width: 90%;
 }
 
 h1 {
@@ -52,12 +58,6 @@ input[type="text"]:focus {
 
 .business-card:hover {
     transform: scale(1.02);
-}
-
-.business-name {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .business-detail {
