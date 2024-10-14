@@ -1,16 +1,16 @@
 const businesses = [
-    { name: "İşletme 1", address: "Adres 1", logo: "🏢", details: "Detay 1 hakkında bilgi." },
-    { name: "İşletme 2", address: "Adres 2", logo: "🏢", details: "Detay 2 hakkında bilgi." },
-    { name: "İşletme 3", address: "Adres 3", logo: "🏢", details: "Detay 3 hakkında bilgi." },
-    { name: "İşletme 4", address: "Adres 4", logo: "🏢", details: "Detay 4 hakkında bilgi." },
-    { name: "İşletme 5", address: "Adres 5", logo: "🏢", details: "Detay 5 hakkında bilgi." },
-    { name: "İşletme 6", address: "Adres 6", logo: "🏢", details: "Detay 6 hakkında bilgi." },
-    { name: "İşletme 7", address: "Adres 7", logo: "🏢", details: "Detay 7 hakkında bilgi." },
-    { name: "İşletme 8", address: "Adres 8", logo: "🏢", details: "Detay 8 hakkında bilgi." },
-    { name: "İşletme 9", address: "Adres 9", logo: "🏢", details: "Detay 9 hakkında bilgi." },
-    { name: "İşletme 10", address: "Adres 10", logo: "🏢", details: "Detay 10 hakkında bilgi." },
-    { name: "İşletme 11", address: "Adres 11", logo: "🏢", details: "Detay 11 hakkında bilgi." },
-    { name: "İşletme 12", address: "Adres 12", logo: "🏢", details: "Detay 12 hakkında bilgi." },
+    { name: "İşletme 1", address: "Adres 1", details: "Detay 1 hakkında bilgi." },
+    { name: "İşletme 2", address: "Adres 2", details: "Detay 2 hakkında bilgi." },
+    { name: "İşletme 3", address: "Adres 3", details: "Detay 3 hakkında bilgi." },
+    { name: "İşletme 4", address: "Adres 4", details: "Detay 4 hakkında bilgi." },
+    { name: "İşletme 5", address: "Adres 5", details: "Detay 5 hakkında bilgi." },
+    { name: "İşletme 6", address: "Adres 6", details: "Detay 6 hakkında bilgi." },
+    { name: "İşletme 7", address: "Adres 7", details: "Detay 7 hakkında bilgi." },
+    { name: "İşletme 8", address: "Adres 8", details: "Detay 8 hakkında bilgi." },
+    { name: "İşletme 9", address: "Adres 9", details: "Detay 9 hakkında bilgi." },
+    { name: "İşletme 10", address: "Adres 10", details: "Detay 10 hakkında bilgi." },
+    { name: "İşletme 11", address: "Adres 11", details: "Detay 11 hakkında bilgi." },
+    { name: "İşletme 12", address: "Adres 12", details: "Detay 12 hakkında bilgi." },
 ];
 
 const itemsPerPage = 5;
@@ -29,16 +29,25 @@ function renderBusinessList(page) {
         card.classList.add('business-card');
         card.innerHTML = `
             <div class="business-name">
-                <span class="business-icon">${business.logo}</span>
                 <span>${business.name}</span>
             </div>
-            <div>
-                <p>${business.address}</p>
+            <div class="business-detail" id="detail-${business.name.replace(/\s/g, '')}">
+                <p><strong>Adres:</strong> ${business.address}</p>
+                <p>${business.details}</p>
             </div>
         `;
-        card.addEventListener('click', () => showBusinessDetails(business));
+        card.addEventListener('click', () => toggleBusinessDetails(business.name.replace(/\s/g, '')));
         businessList.appendChild(card);
     });
+}
+
+function toggleBusinessDetails(businessId) {
+    const detailDiv = document.getElementById(`detail-${businessId}`);
+    if (detailDiv.style.display === "none" || detailDiv.style.display === "") {
+        detailDiv.style.display = "block";
+    } else {
+        detailDiv.style.display = "none";
+    }
 }
 
 function renderPagination() {
@@ -58,17 +67,6 @@ function changePage(page) {
     currentPage = page;
     renderBusinessList(currentPage);
 }
-
-function showBusinessDetails(business) {
-    document.getElementById('detail-name').innerText = business.name;
-    document.getElementById('detail-address').innerText = business.address;
-    document.getElementById('detail-info').innerText = business.details;
-    document.getElementById('business-detail').classList.remove('hidden');
-}
-
-document.getElementById('close-detail').addEventListener('click', () => {
-    document.getElementById('business-detail').classList.add('hidden');
-});
 
 document.getElementById('search').addEventListener('input', (event) => {
     const query = event.target.value.toLowerCase();
@@ -107,14 +105,14 @@ function renderFilteredPage(page, query) {
         card.classList.add('business-card');
         card.innerHTML = `
             <div class="business-name">
-                <span class="business-icon">${business.logo}</span>
                 <span>${business.name}</span>
             </div>
-            <div>
-                <p>${business.address}</p>
+            <div class="business-detail" id="detail-${business.name.replace(/\s/g, '')}">
+                <p><strong>Adres:</strong> ${business.address}</p>
+                <p>${business.details}</p>
             </div>
         `;
-        card.addEventListener('click', () => showBusinessDetails(business));
+        card.addEventListener('click', () => toggleBusinessDetails(business.name.replace(/\s/g, '')));
         businessList.appendChild(card);
     });
 }
