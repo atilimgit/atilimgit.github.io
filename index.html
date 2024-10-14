@@ -48,3 +48,53 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGITKart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AGIT Kart İşletme Listesi</h1>
+        <input type="text" id="search" placeholder="İşletme Ara...">
+        
+        <div class="filters">
+            <label for="district">Semt Seçin:</label>
+            <select id="district">
+                <option value="">Tümü</option>
+                <option value="Bahçelievler">Bahçelievler</option>
+                <option value="Kızılay">Kızılay</option>
+                <option value="Tunalı">Tunalı</option>
+                <option value="Çayyolu">Çayyolu</option>
+                <option value="Ümitköy">Ümitköy</option>
+            </select>
+
+            <label for="discount">İndirim Oranı:</label>
+            <select id="discount">
+                <option value="">Tümü</option>
+                <option value="0">0%</option>
+                <option value="10">10% ve üstü</option>
+                <option value="20">20% ve üstü</option>
+                <option value="30">30% ve üstü</option>
+            </select>
+        </div>
+
+        <div id="business-list" class="business-list"></div>
+        <div class="pagination" id="pagination"></div>
+
+        <footer>
+            <div class="footer-content">
+                <p>Created by AGIT</p>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
