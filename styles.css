@@ -28,29 +28,36 @@ h1 {
 }
 
 input[type="text"], select {
-    width: 100%;
+    width: calc(50% - 10px);
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 10px 5px;
     border: 1px solid #ffcc00;
     border-radius: 5px;
-    background-color: #222;
-    color: #ffcc00;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
 }
 
 input[type="text"]:focus, select:focus {
     border-color: #fff;
 }
 
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .business-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 20px;
 }
 
 .business-card {
     display: flex;
     align-items: center;
-    background: #444;
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border: 1px solid #ffcc00;
     border-radius: 5px;
@@ -60,7 +67,7 @@ input[type="text"]:focus, select:focus {
 
 .business-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
 }
 
 .business-logo {
@@ -76,7 +83,7 @@ input[type="text"]:focus, select:focus {
 
 .business-detail {
     display: none;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
