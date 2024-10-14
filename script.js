@@ -1,9 +1,9 @@
 const businesses = [
-    { name: "İşletme 1", address: "Adres 1", discount: 10, details: "Detay 1 hakkında bilgi.", logo: "logo1.png" },
-    { name: "İşletme 2", address: "Adres 2", discount: 15, details: "Detay 2 hakkında bilgi.", logo: "logo2.png" },
-    { name: "İşletme 3", address: "Adres 3", discount: 5, details: "Detay 3 hakkında bilgi.", logo: "logo3.png" },
-    { name: "İşletme 4", address: "Adres 4", discount: 20, details: "Detay 4 hakkında bilgi.", logo: "logo4.png" },
-    { name: "İşletme 5", address: "Adres 5", discount: 25, details: "Detay 5 hakkında bilgi.", logo: "logo5.png" },
+    { name: "İşletme 1", address: "Adres 1", district: "Bahçelievler", discount: 10, details: "Detay 1 hakkında bilgi.", logo: "logo1.png" },
+    { name: "İşletme 2", address: "Adres 2", district: "Kızılay", discount: 15, details: "Detay 2 hakkında bilgi.", logo: "logo2.png" },
+    { name: "İşletme 3", address: "Adres 3", district: "Tunalı", discount: 5, details: "Detay 3 hakkında bilgi.", logo: "logo3.png" },
+    { name: "İşletme 4", address: "Adres 4", district: "Çayyolu", discount: 20, details: "Detay 4 hakkında bilgi.", logo: "logo4.png" },
+    { name: "İşletme 5", address: "Adres 5", district: "Ümitköy", discount: 25, details: "Detay 5 hakkında bilgi.", logo: "logo5.png" },
 ];
 
 const itemsPerPage = 5;
@@ -12,7 +12,7 @@ let currentPage = 1;
 function renderBusinessList(page) {
     const start = (page - 1) * itemsPerPage;
     const end = start + itemsPerPage;
-    const filteredBusinesses = businesses.slice(start, end);
+    const filteredBusinesses = filterBusinesses(businesses).slice(start, end);
     
     const businessList = document.getElementById('business-list');
     businessList.innerHTML = '';
@@ -39,9 +39,24 @@ function toggleBusinessDetails(businessId) {
     detailDiv.style.display = detailDiv.style.display === "none" || detailDiv.style.display === "" ? "block" : "none";
 }
 
+function filterBusinesses(businesses) {
+    const searchQuery = document.getElementById('search').value.toLowerCase();
+    const selectedDistrict = document.getElementById('district').value;
+    const selectedDiscount = document.getElementById('discount').value;
+
+    return businesses.filter(business => {
+        const matchesSearch = business.name.toLowerCase().includes(searchQuery) || business.address.toLowerCase().includes(searchQuery);
+        const matchesDistrict = selectedDistrict === "" || business.district === selectedDistrict;
+        const matchesDiscount = selectedDiscount === "" || business.discount >= parseInt(selectedDiscount);
+
+        return matchesSearch && matchesDistrict && matchesDiscount;
+    });
+}
+
 function renderPagination() {
     const pagination = document.getElementById('pagination');
-    const pageCount = Math.ceil(businesses.length / itemsPerPage);
+    const filteredBusinesses = filterBusinesses(businesses);
+    const pageCount = Math.ceil(filteredBusinesses.length / itemsPerPage);
     pagination.innerHTML = '';
 
     for (let i = 1; i <= pageCount; i++) {
@@ -57,25 +72,22 @@ function changePage(page) {
     renderBusinessList(currentPage);
 }
 
-document.getElementById('search').addEventListener('input', (event) => {
-    const query = event.target.value.toLowerCase();
-    const filteredBusinesses = businesses.filter(business =>
-        business.name.toLowerCase().includes(query) ||
-        business.address.toLowerCase().includes(query)
-    );
-
-    const pageCount = Math.ceil(filteredBusinesses.length / itemsPerPage);
-    const pagination = document.getElementById('pagination');
-    pagination.innerHTML = '';
-
-    for (let i = 1; i <= pageCount; i++) {
-        const pageItem = document.createElement('span');
-        pageItem.classList.add('page-item');
-        pageItem.innerHTML = `<a href="#" onclick="changePage(${i})">${i}</a>`;
-        pagination.appendChild(pageItem);
-    }
-
+document.getElementById('search').addEventListener('input', () => {
+    currentPage = 1;
     renderBusinessList(currentPage);
+    renderPagination();
+});
+
+document.getElementById('district').addEventListener('change', () => {
+    currentPage = 1;
+    renderBusinessList(currentPage);
+    renderPagination();
+});
+
+document.getElementById('discount').addEventListener('change', () => {
+    currentPage = 1;
+    renderBusinessList(currentPage);
+    renderPagination();
 });
 
 renderBusinessList(currentPage);
