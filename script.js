@@ -36,12 +36,7 @@ function renderBusinessList(page) {
 
 function toggleBusinessDetails(businessId) {
     const detailDiv = document.getElementById(`detail-${businessId}`);
-    
-    if (detailDiv.classList.contains('show')) {
-        detailDiv.classList.remove('show');
-    } else {
-        detailDiv.classList.add('show');
-    }
+    detailDiv.style.display = detailDiv.style.display === "none" || detailDiv.style.display === "" ? "block" : "none";
 }
 
 function filterBusinesses(businesses) {
@@ -87,16 +82,5 @@ document.getElementById('search').addEventListener('input', applyFilters);
 document.getElementById('district').addEventListener('change', applyFilters);
 document.getElementById('discount').addEventListener('change', applyFilters);
 
-function showMainContent() {
-    document.getElementById('welcome-message').style.display = 'none';
-    document.getElementById('main-content').style.display = 'block';
-    setTimeout(() => {
-        document.getElementById('main-content').style.opacity = 1;
-    }, 50);
-}
-
-window.onload = function() {
-    setTimeout(showMainContent, 3000);
-    renderBusinessList(currentPage);
-    renderPagination();
-};
+renderBusinessList(currentPage);
+renderPagination();
