@@ -97,3 +97,14 @@ footer {
     padding: 10px;
     border-radius: 5px;
 }
+
+footer a {
+    display: flex;
+    align-items: center;
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a i {
+    margin-right: 8px;
+}
