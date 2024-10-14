@@ -29,25 +29,45 @@ h1 {
 
 input[type="text"], select {
     width: calc(50% - 10px);
-    padding: 15px;
+    padding: 10px;
     margin: 10px 5px;
     border: 1px solid #ffcc00;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
-    font-size: 1em;
 }
 
 input[type="text"]:focus, select:focus {
     border-color: #fff;
-    background-color: #ffcc00;
-    color: #000;
 }
 
 .filters {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-text {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #ffcc00;
+    margin-top: 5px;
+}
+
+select {
+    transition: background-color 0.3s ease;
+}
+
+select:focus {
+    background-color: #ffcc00;
+    color: #000;
 }
 
 .business-list {
