@@ -87,5 +87,16 @@ document.getElementById('search').addEventListener('input', applyFilters);
 document.getElementById('district').addEventListener('change', applyFilters);
 document.getElementById('discount').addEventListener('change', applyFilters);
 
-renderBusinessList(currentPage);
-renderPagination();
+function showMainContent() {
+    document.getElementById('welcome-message').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+    setTimeout(() => {
+        document.getElementById('main-content').style.opacity = 1;
+    }, 50);
+}
+
+window.onload = function() {
+    setTimeout(showMainContent, 3000);
+    renderBusinessList(currentPage);
+    renderPagination();
+};
