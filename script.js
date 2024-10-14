@@ -1,16 +1,16 @@
 const businesses = [
-    { name: "İşletme 1", address: "Adres 1", details: "Detay 1 hakkında bilgi." },
-    { name: "İşletme 2", address: "Adres 2", details: "Detay 2 hakkında bilgi." },
-    { name: "İşletme 3", address: "Adres 3", details: "Detay 3 hakkında bilgi." },
-    { name: "İşletme 4", address: "Adres 4", details: "Detay 4 hakkında bilgi." },
-    { name: "İşletme 5", address: "Adres 5", details: "Detay 5 hakkında bilgi." },
-    { name: "İşletme 6", address: "Adres 6", details: "Detay 6 hakkında bilgi." },
-    { name: "İşletme 7", address: "Adres 7", details: "Detay 7 hakkında bilgi." },
-    { name: "İşletme 8", address: "Adres 8", details: "Detay 8 hakkında bilgi." },
-    { name: "İşletme 9", address: "Adres 9", details: "Detay 9 hakkında bilgi." },
-    { name: "İşletme 10", address: "Adres 10", details: "Detay 10 hakkında bilgi." },
-    { name: "İşletme 11", address: "Adres 11", details: "Detay 11 hakkında bilgi." },
-    { name: "İşletme 12", address: "Adres 12", details: "Detay 12 hakkında bilgi." },
+    { name: "İşletme 1", address: "Adres 1", discount: 10, details: "Detay 1 hakkında bilgi." },
+    { name: "İşletme 2", address: "Adres 2", discount: 15, details: "Detay 2 hakkında bilgi." },
+    { name: "İşletme 3", address: "Adres 3", discount: 5, details: "Detay 3 hakkında bilgi." },
+    { name: "İşletme 4", address: "Adres 4", discount: 20, details: "Detay 4 hakkında bilgi." },
+    { name: "İşletme 5", address: "Adres 5", discount: 25, details: "Detay 5 hakkında bilgi." },
+    { name: "İşletme 6", address: "Adres 6", discount: 30, details: "Detay 6 hakkında bilgi." },
+    { name: "İşletme 7", address: "Adres 7", discount: 10, details: "Detay 7 hakkında bilgi." },
+    { name: "İşletme 8", address: "Adres 8", discount: 15, details: "Detay 8 hakkında bilgi." },
+    { name: "İşletme 9", address: "Adres 9", discount: 5, details: "Detay 9 hakkında bilgi." },
+    { name: "İşletme 10", address: "Adres 10", discount: 20, details: "Detay 10 hakkında bilgi." },
+    { name: "İşletme 11", address: "Adres 11", discount: 25, details: "Detay 11 hakkında bilgi." },
+    { name: "İşletme 12", address: "Adres 12", discount: 30, details: "Detay 12 hakkında bilgi." },
 ];
 
 const itemsPerPage = 5;
@@ -28,11 +28,10 @@ function renderBusinessList(page) {
         const card = document.createElement('div');
         card.classList.add('business-card');
         card.innerHTML = `
-            <div class="business-name">
-                <span>${business.name}</span>
-            </div>
+            <div class="business-name">${business.name}</div>
             <div class="business-detail" id="detail-${business.name.replace(/\s/g, '')}">
                 <p><strong>Adres:</strong> ${business.address}</p>
+                <p><strong>İndirim oranı:</strong> %${business.discount}</p>
                 <p>${business.details}</p>
             </div>
         `;
@@ -104,11 +103,10 @@ function renderFilteredPage(page, query) {
         const card = document.createElement('div');
         card.classList.add('business-card');
         card.innerHTML = `
-            <div class="business-name">
-                <span>${business.name}</span>
-            </div>
+            <div class="business-name">${business.name}</div>
             <div class="business-detail" id="detail-${business.name.replace(/\s/g, '')}">
                 <p><strong>Adres:</strong> ${business.address}</p>
+                <p><strong>İndirim oranı:</strong> %${business.discount}</p>
                 <p>${business.details}</p>
             </div>
         `;
