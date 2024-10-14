@@ -61,6 +61,15 @@ input[type="text"]:focus, select:focus {
     margin-top: 5px;
 }
 
+select {
+    transition: background-color 0.3s ease;
+}
+
+select:focus {
+    background-color: #ffcc00;
+    color: #000;
+}
+
 .business-list {
     display: flex;
     flex-direction: column;
