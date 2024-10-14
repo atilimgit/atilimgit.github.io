@@ -36,7 +36,12 @@ function renderBusinessList(page) {
 
 function toggleBusinessDetails(businessId) {
     const detailDiv = document.getElementById(`detail-${businessId}`);
-    detailDiv.style.display = detailDiv.style.display === "none" || detailDiv.style.display === "" ? "block" : "none";
+    
+    if (detailDiv.classList.contains('show')) {
+        detailDiv.classList.remove('show');
+    } else {
+        detailDiv.classList.add('show');
+    }
 }
 
 function filterBusinesses(businesses) {
