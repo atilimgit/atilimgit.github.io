@@ -13,24 +13,30 @@
         <input type="text" id="search" placeholder="İşletme Ara...">
         
         <div class="filters">
-            <label for="district">Semt Seç:</label>
-            <select id="district">
-                <option value="">Tümü</option>
-                <option value="Bahçelievler">Bahçelievler</option>
-                <option value="Kızılay">Kızılay</option>
-                <option value="Tunalı">Tunalı</option>
-                <option value="Çayyolu">Çayyolu</option>
-                <option value="Ümitköy">Ümitköy</option>
-            </select>
+            <div class="filter-group">
+                <label for="district">Semt Seç:</label>
+                <select id="district">
+                    <option value="">Tümü</option>
+                    <option value="Bahçelievler">Bahçelievler</option>
+                    <option value="Kızılay">Kızılay</option>
+                    <option value="Tunalı">Tunalı</option>
+                    <option value="Çayyolu">Çayyolu</option>
+                    <option value="Ümitköy">Ümitköy</option>
+                </select>
+                <small class="info-text">Semtleri filtrelemek için seçin.</small>
+            </div>
 
-            <label for="discount">İndirim Oranı Seç:</label>
-            <select id="discount">
-                <option value="">Tümü</option>
-                <option value="0">0%</option>
-                <option value="10">10% ve üstü</option>
-                <option value="20">20% ve üstü</option>
-                <option value="30">30% ve üstü</option>
-            </select>
+            <div class="filter-group">
+                <label for="discount">İndirim Oranı Seç:</label>
+                <select id="discount">
+                    <option value="">Tümü</option>
+                    <option value="0">0%</option>
+                    <option value="10">10% ve üstü</option>
+                    <option value="20">20% ve üstü</option>
+                    <option value="30">30% ve üstü</option>
+                </select>
+                <small class="info-text">İndirim oranını filtrelemek için seçin.</small>
+            </div>
         </div>
 
         <div id="business-list" class="business-list"></div>
@@ -38,7 +44,7 @@
 
         <footer>
             <div class="footer-content">
-                <p>Created by AGIT</p>
+                <p>created by agit</p>
                 <a href="https://instagram.com" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>

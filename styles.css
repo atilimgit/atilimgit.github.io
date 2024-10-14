@@ -45,20 +45,20 @@ input[type="text"]:focus, select:focus {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-.filters label {
-    margin-right: 10px;
-    color: #ffcc00; /* Etiket rengi sarı */
-    margin-bottom: 5px;
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-select {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-select:focus {
-    background-color: #ffcc00; /* Sarı renk açıldığında */
+.info-text {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #ffcc00;
+    margin-top: 5px;
 }
 
 .business-list {
