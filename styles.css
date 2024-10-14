@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.business-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.business-card {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.business-card img {
+    max-width: 50px;
+    margin-right: 15px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.page-item {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.page-item a {
+    text-decoration: none;
+    padding: 8px 12px;
+    background: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
