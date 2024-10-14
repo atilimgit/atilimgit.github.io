@@ -47,6 +47,12 @@ input[type="text"]:focus, select:focus {
     flex-wrap: wrap;
 }
 
+.filters label {
+    margin-right: 10px;
+    color: #ffcc00; /* Etiket rengi sarı */
+    margin-bottom: 5px;
+}
+
 select {
     background-color: rgba(255, 255, 255, 0.2);
 }
@@ -95,16 +101,10 @@ select:focus {
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-    overflow: hidden;
-    opacity: 0;
-    max-height: 0;
 }
 
-.business-detail.show {
-    display: block;
-    opacity: 1;
-    max-height: 200px; /* Detayın açıldığı yükseklik */
+.business-detail p {
+    margin: 5px 0;
 }
 
 .pagination {
