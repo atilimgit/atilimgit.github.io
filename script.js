@@ -1,9 +1,9 @@
 const businesses = [
-    { name: "İşletme 1", address: "Adres 1", district: "Bahçelievler", discount: 10, details: "Detay 1 hakkında bilgi.", logo: "background-image.jpg" },
-    { name: "İşletme 2", address: "Adres 2", district: "Kızılay", discount: 15, details: "Detay 2 hakkında bilgi.", logo: "background-image.jpg" },
-    { name: "İşletme 3", address: "Adres 3", district: "Tunalı", discount: 5, details: "Detay 3 hakkında bilgi.", logo: "background-image.jpg" },
-    { name: "İşletme 4", address: "Adres 4", district: "Çayyolu", discount: 20, details: "Detay 4 hakkında bilgi.", logo: "background-image.jpg" },
-    { name: "İşletme 5", address: "Adres 5", district: "Ümitköy", discount: 25, details: "Detay 5 hakkında bilgi.", logo: "background-image.jpg" },
+    { name: "Miniera", address: "Adres", district: "Bahçelievler", discount: 30, details: "Miniera'nın eşsiz kahveleri ile buluşmaya hazır olun!.", logo: "background-image.jpg" },
+    { name: "Esnaf Lokantaları", address: "Adres", district: "Kızılay", discount: 10, details: "Esnaf lokantasının birbirinden güzel yemeklerine doyamayacksınız.", logo: "background-image.jpg" },
+    { name: "Tunus Islak Hamburger", address: "Adres", district: "Tunalı", discount: 5, details: "Bu işletme ile sizi adeta Taksim'e ışınlayacağız!", logo: "background-image.jpg" },
+    { name: "İşletme 4", address: "Adres 4", district: "Çayyolu", discount: 20, details: "İşletme 4 hakkında bilgi.", logo: "background-image.jpg" },
+    { name: "İşletme 5", address: "Adres 5", district: "Ümitköy", discount: 25, details: "İşletme 5 hakkında bilgi.", logo: "background-image.jpg" },
 ];
 
 const itemsPerPage = 5;
