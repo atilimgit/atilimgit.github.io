@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;
+    background: rgba(0, 0, 0, 0.8) url('background-image.jpg') no-repeat center center fixed; /* Arka plan resmi */
+    background-size: cover;
     color: #fff;
     margin: 0;
     padding: 20px;
@@ -10,6 +11,9 @@ body {
     max-width: 800px;
     margin: auto;
     text-align: center;
+    background: rgba(51, 51, 51, 0.8); /* İç alan arka planı */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h1 {
@@ -42,9 +46,6 @@ input[type="text"]:focus {
     padding: 15px;
     border: 1px solid #ffcc00;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    animation: fadeIn 0.5s;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -59,8 +60,12 @@ input[type="text"]:focus {
     gap: 10px;
 }
 
-.business-icon {
-    font-size: 24px;
+.business-detail {
+    display: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .pagination {
@@ -88,34 +93,7 @@ input[type="text"]:focus {
 footer {
     margin-top: 40px;
     color: #ffcc00;
-}
-
-footer a {
-    color: #ffcc00;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-.business-detail {
-    background: #444;
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
     border-radius: 5px;
-    margin-top: 20px;
-    position: relative;
-}
-
-.hidden {
-    display: none;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
