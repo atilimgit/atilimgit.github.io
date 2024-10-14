@@ -1,12 +1,159 @@
 const businesses = [
-    { name: "Miniera", address: "Adres", district: "Bahçelievler", discount: 30, details: "Miniera'nın eşsiz kahveleri ile buluşmaya hazır olun!.", logo: "background-image.jpg" },
-    { name: "Esnaf Lokantaları", address: "Adres", district: "Kızılay", discount: 10, details: "Esnaf lokantasının birbirinden güzel yemeklerine doyamayacksınız.", logo: "background-image.jpg" },
-    { name: "Tunus Islak Hamburger", address: "Adres", district: "Tunalı", discount: 5, details: "Bu işletme ile sizi adeta Taksim'e ışınlayacağız!", logo: "background-image.jpg" },
-    { name: "İşletme 4", address: "Adres 4", district: "Çayyolu", discount: 20, details: "İşletme 4 hakkında bilgi.", logo: "background-image.jpg" },
-    { name: "İşletme 5", address: "Adres 5", district: "Ümitköy", discount: 25, details: "İşletme 5 hakkında bilgi.", logo: "background-image.jpg" },
+  { 
+    name: "KajunToGo", 
+    address: "Yaşamkent, 3250. Cd. no 26 D:51, 06810 Çankaya/Ankara, Türkiye", 
+    district: "Yaşamkent", 
+    discount: 10, 
+    details: "Lezzetli Kajun menüleriyle kendinizi şımartın.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Dois Döner", 
+    address: "Yaşamkent, 3250. Cd. No: 26/BD, 06810 Çankaya/Ankara, Türkiye", 
+    district: "Yaşamkent", 
+    discount: 10, 
+    details: "Klasik dönerin modern yorumu.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Sofa Burger&Fries", 
+    address: "MutluKöy sitesi No:13 Ümitköy, Mutlukent, 1948. Sk., 06810 Çankaya/Ankara, Türkiye", 
+    district: "Ümitköy", 
+    discount: 10, 
+    details: "Burger ve patatesin en iyi hali.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Talya Veteriner", 
+    address: "Beytepe, Plevne Cd No:10/AA, 06800 Çankaya/Ankara, Türkiye", 
+    district: "Beytepe", 
+    discount: 10, 
+    details: "Sevimli dostlarınız için profesyonel hizmet.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Coffee Sumatra", 
+    address: "Yukarı Bahçelievler, Oğuzhan Asiltürk Caddesi No:26, 06490 Çankaya/Ankara, Türkiye", 
+    district: "Bahçeli", 
+    discount: 10, 
+    details: "Kahve molalarının vazgeçilmezi.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Roma Antico Coffee", 
+    address: "Yukarıbahçelievler Mahallesi, Oğuzhan Asiltürk Caddesi No:16/A, 06490 Çankaya/Ankara, Türkiye", 
+    district: "Bahçeli", 
+    discount: 10, 
+    details: "İtalyan kahve deneyimi Ankara’da.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Cake Art", 
+    address: "Bahçelievler, 54. Cad. 15/B, 06490 Çankaya/Ankara, Türkiye", 
+    district: "Bahçeli", 
+    discount: 10, 
+    details: "Ev yapımı tatlılarda sınır tanımayın.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Agartha Pub", 
+    address: "Bahçelievler, Prof. Muammer Aksoy Cd 35/B, 06490 Çankaya/Ankara, Türkiye", 
+    district: "Bahçeli", 
+    discount: 10, 
+    details: "Unutulmaz bir pub deneyimi.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Pilav Üstü Aşk", 
+    address: "Bahçelievler, Azerbaycan Cd. No:59, 06490 Çankaya/Ankara, Türkiye", 
+    district: "Bahçeli", 
+    discount: 10, 
+    details: "Lezzet dolu pilav aşkı.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Fok Pub", 
+    address: "Bahçelievler, 06490 Çankaya/Ankara, Türkiye", 
+    district: "Bahçeli", 
+    discount: 10, 
+    details: "Mükemmel bir pub atmosferi.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Espresso Check", 
+    address: "Bahçelievler, Prof. Muammer Aksoy Cd No:37/A, 06490 Çankaya/Ankara, Türkiye", 
+    district: "Bahçeli", 
+    discount: 25, 
+    details: "Espresso severler için vazgeçilmez.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Banana Pudding", 
+    address: "Yukarı Bahçelievler, 70. Sk. No:21 D:C, 06490 Çankaya/Ankara, Türkiye", 
+    district: "Bahçeli", 
+    discount: 15, 
+    details: "Tatlı severler için benzersiz bir deneyim.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Miniera Coffee", 
+    address: "Yukarı Bahçelievler, 65. Sk. No:5/a, 06550 Çankaya/Ankara, Türkiye", 
+    district: "Bahçeli", 
+    discount: 30, 
+    details: "Miniera’nın eşsiz kahveleri ile buluşmaya hazır olun!", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Route NY", 
+    address: "Bahçelievler, Azerbaycan Cd. No:41, 06490 Çankaya/Ankara, Türkiye", 
+    district: "Bahçeli", 
+    discount: 10, 
+    details: "New York tarzı yemekler burada.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Gloria Jeans", 
+    address: "Bahçelievler, 36. Sk. No:34, 06490 Çankaya/Ankara, Türkiye", 
+    district: "Bahçeli", 
+    discount: 15, 
+    details: "Dünyanın her yerinden kahve seçenekleri.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Komşu Meyhane", 
+    address: "Güvenevler, Farabi Sk. 32/B, 06500 Çankaya/Ankara, Türkiye", 
+    district: "Tunalı", 
+    discount: 0, 
+    details: "100 TL indirim fırsatını kaçırmayın.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "The Coffee Company", 
+    address: "Çayyolu, 06810 Çankaya/Ankara, Türkiye", 
+    district: "Çayyolu", 
+    discount: 15, 
+    details: "Kahve severlerin yeni buluşma noktası.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Halanın Yeri", 
+    address: "Kızılcaşar, Zafer Cd. No:4 D:37 - E, 06830 Gölbaşı/Ankara, Türkiye", 
+    district: "İncek", 
+    discount: 5, 
+    details: "Ev lezzetlerinde son nokta.", 
+    logo: "background-image.jpg" 
+  },
+  { 
+    name: "Komagene", 
+    address: "Taşpınar, İsmail Gaspıralı Cd No:24, 06830 Gölbaşı/Ankara, Türkiye", 
+    district: "İncek", 
+    discount: 15, 
+    details: "Efsane çiğ köfte burada.", 
+    logo: "background-image.jpg" 
+  }
 ];
 
-const itemsPerPage = 5;
+const itemsPerPage = 10;
 let currentPage = 1;
 
 function renderBusinessList(page) {
