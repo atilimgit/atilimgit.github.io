@@ -72,23 +72,15 @@ function changePage(page) {
     renderBusinessList(currentPage);
 }
 
-document.getElementById('search').addEventListener('input', () => {
+function applyFilters() {
     currentPage = 1;
     renderBusinessList(currentPage);
     renderPagination();
-});
+}
 
-document.getElementById('district').addEventListener('change', () => {
-    currentPage = 1;
-    renderBusinessList(currentPage);
-    renderPagination();
-});
-
-document.getElementById('discount').addEventListener('change', () => {
-    currentPage = 1;
-    renderBusinessList(currentPage);
-    renderPagination();
-});
+document.getElementById('search').addEventListener('input', applyFilters);
+document.getElementById('district').addEventListener('change', applyFilters);
+document.getElementById('discount').addEventListener('change', applyFilters);
 
 renderBusinessList(currentPage);
 renderPagination();
