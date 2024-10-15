@@ -36,6 +36,7 @@ body {
         width: 90%; 
     }
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -129,6 +130,7 @@ select:focus {
     font-size: 1.8em;
     color: #ffcc00;
     margin-left: 15px;
+    font-family: 'Helvetica Neue', sans-serif; /* Modern font */
 }
 
 .business-detail {
@@ -139,9 +141,25 @@ select:focus {
     margin-top: 10px;
 }
 
-
 .business-detail p {
     margin: 5px 0;
+}
+
+.business-detail .address {
+    font-weight: bold; /* Vurgulamak için */
+}
+
+.business-detail .discount {
+    font-weight: bold; /* Vurgulamak için */
+    color: #ffcc00; /* Renk */
+}
+
+.business-detail .address::before {
+    content: "📍 "; /* Konum emojisi */
+}
+
+.business-detail .discount::before {
+    content: "💰 "; /* İndirim oranı emojisi */
 }
 
 .pagination {
@@ -192,6 +210,7 @@ footer a {
 footer a i {
     margin-right: 8px;
 }
+
 .pseudo-logo {
     width: 50px; /* Adjust based on your design */
     height: 50px; /* Adjust based on your design */
@@ -204,6 +223,7 @@ footer a i {
     font-size: 20px; /* Adjust font size */
     font-weight: bold; /* Bold text */
 }
+
 .business-logo {
     width: 50px; /* Adjust width */
     height: 50px; /* Adjust height */
@@ -213,8 +233,6 @@ footer a i {
     margin-right: 10px; /* Space between logo and text */
     display: inline-block; /* Make it inline-block to fit next to name */
 }
-
-
 
 .modal {
     display: none;
@@ -256,4 +274,3 @@ footer a i {
     text-decoration: none;
     cursor: pointer;
 }
-
