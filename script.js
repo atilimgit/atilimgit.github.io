@@ -411,6 +411,29 @@ function renderPagination() {
         pagination.appendChild(pageItem);
     }
 }
+document.addEventListener('DOMContentLoaded', () => {
+    // Örnek kullanıcı ve işletme sayısı
+    const userCount = 100; // Bu değeri dinamik hale getirebilirsiniz
+    const businessCount = 50; // Bu değeri dinamik hale getirebilirsiniz
+
+    document.getElementById('userCount').textContent = userCount;
+    document.getElementById('businessCount').textContent = businessCount;
+
+    const modal = document.getElementById('welcomeModal');
+    modal.style.display = 'block';
+
+    // Kapatma butonuna tıklanıldığında modalı kapat
+    document.getElementById('closeModal').addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Modal dışında bir yere tıklanırsa modalı kapat
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
 
 function changePage(page) {
     currentPage = page;
