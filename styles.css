@@ -5,45 +5,79 @@
 }
 
 body {
-    background-image: url('background-image.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    min-height: 100vh; 
-    overflow: auto; 
-    font-family: 'Poppins', sans-serif; 
-    color: #fff; 
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lato:wght@400;700&display=swap');
+
+@media (max-width: 768px) {
+    .business-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        transition: transform 0.3s;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .business-logo {
+        width: 60px;
+        height: 60px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .business-name {
+        font-size: 2.2em;
+        font-weight: 600;
+        color: #ffd700;
+    }
+
+    .business-detail {
+        font-size: 0.9em;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    background: rgba(0, 0, 0, 0.7); 
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%;
+    background: rgba(51, 51, 51, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-    color: #ffd700; 
+    color: #ffd700;
     margin-bottom: 20px;
-    font-size: 2.5em; 
+    font-size: 2.5em;
 }
 
-input[type="text"], select {
+input[type="text"],
+select {
     width: calc(50% - 10px);
-    padding: 10px;
+    padding: 12px;
     margin: 10px 5px;
-    border: 1px solid #ffd700; 
-    border-radius: 5px;
+    border: 1px solid #ffd700;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
-    font-size: 1em;
+    transition: border 0.3s;
 }
 
-input[type="text"]:focus, select:focus {
+input[type="text"]:focus,
+select:focus {
     border-color: #fff;
 }
 
@@ -55,9 +89,16 @@ input[type="text"]:focus, select:focus {
 }
 
 .filter-group select {
-    width: 150px; 
+    width: 150px;
     padding: 10px;
-    font-size: 16px; 
+    font-size: 16px;
+}
+
+.info-text {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #ffd700;
+    margin-top: 5px;
 }
 
 .business-list {
@@ -70,17 +111,14 @@ input[type="text"]:focus, select:focus {
 .business-card {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.3); 
     padding: 20px;
-    border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .business-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .business-logo {
@@ -88,20 +126,19 @@ input[type="text"]:focus, select:focus {
     height: 70px;
     margin-right: 15px;
     border-radius: 50%;
-    border: 2px solid #ffd700; 
+    border: 2px solid #ffd700;
 }
 
 .business-name {
-    font-size: 1.6em; 
+    font-size: 1.8em;
     color: #ffd700;
     margin-left: 15px;
 }
 
 .business-detail p {
-    font-size: 1em;
-    color: #ffd700; 
+    font-size: 1.1em;
+    color: #ffd700;
     font-weight: bold;
-    margin: 5px 0;
 }
 
 .pagination {
@@ -116,23 +153,29 @@ input[type="text"]:focus, select:focus {
 .page-item a {
     text-decoration: none;
     padding: 8px 12px;
-    background: #ffd700; 
+    background: #ffd700;
     color: #000;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
 .page-item a:hover {
-    background: #ffcc00; 
+    background: #ffcc00;
 }
 
 footer {
     margin-top: 40px;
-    color: #ffd700; 
+    color: #ffd700;
     background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 10px;
     text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .modal {
@@ -144,17 +187,23 @@ footer {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
-    background-color: rgba(0, 0, 0, 0.9); 
+    background-color: rgba(51, 51, 51, 0.95);
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #ffd700; 
+    border: 1px solid #ffd700;
     width: 80%;
-    border-radius: 10px;
-    color: #fff; 
+    border-radius: 15px;
+    color: #fff;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .close-button {
@@ -167,32 +216,5 @@ footer {
 
 .close-button:hover,
 .close-button:focus {
-    color: #fff; 
-}
-
-@media (max-width: 768px) {
-    .business-card {
-        flex-direction: column;
-        align-items: flex-start; 
-        padding: 15px; 
-    }
-
-    .business-logo {
-        width: 50px;
-        height: 50px;
-        margin-right: 0; 
-        margin-bottom: 10px; 
-    }
-
-    .business-name {
-        font-size: 1.5em; 
-    }
-
-    .business-detail {
-        font-size: 0.9em; 
-    }
-
-    .modal-content {
-        width: 90%; 
-    }
+    color: #fff;
 }
