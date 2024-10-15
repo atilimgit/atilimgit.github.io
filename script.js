@@ -412,6 +412,26 @@ function renderPagination() {
     }
 }
 
+const totalBusinesses = businesses.length;
+
+function animateCounter(start, end, duration) {
+    let current = start;
+    const increment = end / (duration / 100);
+    const counter = document.getElementById('business-count');
+
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= end) {
+            current = end;
+            clearInterval(timer);
+        }
+        counter.innerText = Math.floor(current);
+    }, 100);
+}
+
+// Sayacı başlat
+animateCounter(0, totalBusinesses, 2000); // 2 saniyede 0'dan toplam işletme sayısına
+
 function changePage(page) {
     currentPage = page;
     renderBusinessList(currentPage);
