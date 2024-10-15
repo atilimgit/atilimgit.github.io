@@ -10,7 +10,6 @@ body {
     background-position: center; 
     background-repeat: no-repeat; 
     height: 100vh; 
-    /* background-attachment: scroll;  Bu satırı kaldırabilirsin veya sabit kalsın istersen fixed olarak ayarlayabilirsin */
 }
 
 
