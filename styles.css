@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     overflow: auto;
     font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a; 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lato:wght@400;700&display=swap');
@@ -37,20 +38,20 @@ body {
         display: inline-block;
     }
     .pseudo-logo {
-        width: 50px; /* Adjust based on your design */
-        height: 50px; /* Adjust based on your design */
-        background-color: #ccc; /* Change color to fit your theme */
-        color: white; /* Change text color */
+        width: 50px; 
+        height: 50px; 
+        background-color: #ccc; 
+        color: white; 
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%; /* Circular shape */
-        font-size: 20px; /* Adjust font size */
-        font-weight: bold; /* Bold text */
+        border-radius: 50%; 
+        font-size: 20px; 
+        font-weight: bold; 
     }
 
     .business-name {
-        font-size: 1.5em; /* Küçültüldü */
+        font-size: 1.5em; 
         font-weight: 600;
         color: #ffd700;
     }
@@ -68,16 +69,16 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    background: rgba(51, 51, 51, 0.9);
+    background: rgba(20, 20, 20, 0.9);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
 }
 
 h1 {
     color: #ffd700;
     margin-bottom: 20px;
-    font-size: 2em; /* Küçültüldü */
+    font-size: 2em; 
 }
 
 input[type="text"],
@@ -87,7 +88,7 @@ select {
     margin: 10px 5px;
     border: 1px solid #ffd700;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(30, 30, 30, 0.8);
     color: #fff;
     transition: border 0.3s;
 }
@@ -108,7 +109,7 @@ select:focus {
     width: 150px;
     padding: 10px;
     font-size: 16px;
-    color: #fff; /* Yazı rengi beyaz */
+    color: #fff; 
 }
 
 .info-text {
@@ -135,6 +136,7 @@ select:focus {
     padding: 20px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
+    background: rgba(30, 30, 30, 0.8);
 }
 
 .business-card:hover {
@@ -151,14 +153,14 @@ select:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3); /* Arka plan rengi eklendi */
-    color: #888; /* Yazı rengi gri */
-    font-size: 1.5em; /* Baş harfler için boyut */
+    background-color: rgba(50, 50, 50, 0.7);
+    color: #888; 
+    font-size: 1.5em; 
     font-weight: bold;
 }
 
 .business-name {
-    font-size: 1.5em; /* Küçültüldü */
+    font-size: 1.5em; 
     color: #ffd700;
     margin-left: 15px;
 }
@@ -194,7 +196,7 @@ select:focus {
 footer {
     margin-top: 40px;
     color: #ffd700;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.9);
     padding: 15px;
     border-radius: 10px;
     text-align: center;
