@@ -241,7 +241,6 @@ footer {
     color: #fff;
     animation: fadeIn 0.5s;
 }
-
 .business-counter {
     text-align: center; /* Ortala */
     margin: 20px 0; /* Üst ve alt boşluk */
@@ -250,7 +249,7 @@ footer {
 .business-counter h2 {
     font-size: 20px; /* Daha küçük bir font boyutu */
     font-weight: 500; /* Orta kalınlıkta yazı */
-    color: #444; /* Koyu gri renk */
+    color: #B0B0B0; /* Açık gri renk */
     letter-spacing: 0.5px; /* Harfler arasında boşluk */
     margin: 0; /* Varsayılan margin'i sıfırla */
 }
@@ -258,16 +257,15 @@ footer {
 .business-counter span {
     font-size: 28px; /* Daha büyük bir font boyutu */
     font-weight: 700; /* Kalın yazı */
-    color: #007BFF; /* Mavi renk */
+    color: #444; /* Koyu gri renk */
     display: block; /* Yeni satıra geç */
     margin-top: 5px; /* Üst boşluk ekle */
     transition: color 0.3s ease; /* Renk geçişi */
 }
 
 .business-counter span:hover {
-    color: #0056b3; /* Hover durumunda daha koyu mavi */
+    color: #333; /* Hover durumunda biraz daha koyu gri */
 }
-
 
 
 @keyframes fadeIn {
