@@ -242,13 +242,14 @@ footer {
     animation: fadeIn 0.5s;
 }
 .business-counter {
-    background-color: #ffffff; /* Beyaz arka plan */
+    background-color: #f8f9fa; /* Açık gri arka plan */
     border-radius: 8px; /* Yuvarlatılmış köşeler */
     padding: 15px; /* İç boşluk */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
     text-align: center; /* Ortala */
     margin: 20px 0; /* Üst ve alt boşluk */
 }
+
 
 .business-counter h2 {
     font-size: 20px; /* Daha küçük bir font boyutu */
