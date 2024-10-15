@@ -89,6 +89,10 @@ input[type="text"]:focus, select:focus {
     margin-top: 5px;
 }
 
+.info-nocolor {
+    color: off;
+}
+
 select {
     transition: background-color 0.3s ease;
 }
