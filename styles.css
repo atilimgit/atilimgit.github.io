@@ -131,7 +131,7 @@ select:focus {
 }
 
 .info-nocolor {
-    color: white;
+    color: #B0B0B0;
 }
 
 .business-list {
@@ -257,16 +257,15 @@ footer {
 .business-counter span {
     font-size: 28px; /* Daha büyük bir font boyutu */
     font-weight: 700; /* Kalın yazı */
-    color: #444; /* Koyu gri renk */
+    color: #FFD700; /* Sarı renk */
     display: block; /* Yeni satıra geç */
     margin-top: 5px; /* Üst boşluk ekle */
     transition: color 0.3s ease; /* Renk geçişi */
 }
 
 .business-counter span:hover {
-    color: #333; /* Hover durumunda biraz daha koyu gri */
+    color: #FFC107; /* Daha koyu sarı hover durumu */
 }
-
 
 @keyframes fadeIn {
     from { opacity: 0; }
