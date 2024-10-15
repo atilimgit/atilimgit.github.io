@@ -81,7 +81,7 @@ input[type="text"]:focus, select:focus {
 }
 
 .filter-group select {
-    width: 200px; 
+    width: 150px; 
     padding: 10px;
     font-size: 16px; 
 }
