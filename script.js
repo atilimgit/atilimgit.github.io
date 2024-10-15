@@ -316,6 +316,33 @@ const businesses = [
 const itemsPerPage = 10;
 let currentPage = 1;
 
+const modal = document.getElementById('business-modal');
+const modalBusinessName = document.getElementById('modal-business-name');
+const modalBusinessAddress = document.getElementById('modal-business-address');
+const modalBusinessDiscount = document.getElementById('modal-business-discount');
+const modalBusinessDetails = document.getElementById('modal-business-details');
+const closeButton = document.querySelector('.close-button');
+
+
+function showBusinessDetails(business) {
+    modalBusinessName.innerText = business.name;
+    modalBusinessAddress.innerText = `Adres: ${business.address}`;
+    modalBusinessDiscount.innerText = `İndirim oranı: %${business.discount}`;
+    modalBusinessDetails.innerText = business.details;
+
+    modal.style.display = "block";
+}
+
+closeButton.addEventListener('click', () => {
+    modal.style.display = "none";
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
 function renderBusinessList(page) {
     const start = (page - 1) * itemsPerPage;
     const end = start + itemsPerPage;
@@ -328,7 +355,7 @@ function renderBusinessList(page) {
         const card = document.createElement('div');
         card.classList.add('business-card');
 
-        // Determine logo source or create pseudo-logo
+
         let logoContent;
         if (business.logo && business.logo.trim() !== "") {
             logoContent = `<div class="business-logo" style="background-image: url('${business.logo}');"></div>`;
@@ -340,14 +367,10 @@ function renderBusinessList(page) {
         card.innerHTML = `
             ${logoContent}
             <div class="business-name">${business.name}</div>
-            <div class="business-detail" id="detail-${business.name.replace(/\s/g, '')}" style="display: none;">
-                <p><strong>Adres:</strong> ${business.address}</p>
-                <p><strong>İndirim oranı:</strong> %${business.discount}</p>
-                <p>${business.details}</p>
-            </div>
         `;
-        // Event listener to toggle detail visibility
-        card.addEventListener('click', () => toggleBusinessDetails(business.name.replace(/\s/g, '')));
+
+     
+        card.addEventListener('click', () => showBusinessDetails(business));
         businessList.appendChild(card);
     });
 }
