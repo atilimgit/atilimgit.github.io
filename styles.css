@@ -9,7 +9,9 @@ body {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    height: 100vh; 
+    background-attachment: scroll; /* Resmi kaydırdığında hareket ettirmek için */
+    min-height: 100vh; /* Minimum yükseklik, içerik kadar yükseklik alır */
+    overflow: auto; /* Kaydırma çubuğu için */
 }
 
 
