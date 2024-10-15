@@ -326,8 +326,8 @@ const closeButton = document.querySelector('.close-button');
 
 function showBusinessDetails(business) {
     modalBusinessName.innerText = business.name;
-    modalBusinessAddress.innerText = `📍 <strong>Adres:<strong> ${business.address}`;
-    modalBusinessDiscount.innerText = `💸 <strong>İndirim oranı:<strong> %${business.discount}`;
+    modalBusinessAddress.innerHTML = `📍 <strong>Adres:</strong> ${business.address}`;
+    modalBusinessDiscount.innerHTML = `💸 <strong>İndirim oranı:</strong> %${business.discount}`;
     modalBusinessDetails.innerText = business.details;
 
     modal.style.display = "block";
