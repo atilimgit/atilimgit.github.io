@@ -243,21 +243,31 @@ footer {
 }
 
 .business-counter {
-    text-align: center; 
-    margin: 20px 0; 
+    text-align: center; /* Ortala */
+    margin: 20px 0; /* Üst ve alt boşluk */
 }
 
 .business-counter h2 {
-    font-size: 24px; 
-    font-weight: 600; 
-    color: #333; 
-    letter-spacing: 0.5px; 
-    transition: color 0.3s ease;
+    font-size: 20px; /* Daha küçük bir font boyutu */
+    font-weight: 500; /* Orta kalınlıkta yazı */
+    color: #444; /* Koyu gri renk */
+    letter-spacing: 0.5px; /* Harfler arasında boşluk */
+    margin: 0; /* Varsayılan margin'i sıfırla */
 }
 
-.business-counter h2:hover {
-    color: #007BFF; /* Hover durumunda mavi renge döner */
+.business-counter span {
+    font-size: 28px; /* Daha büyük bir font boyutu */
+    font-weight: 700; /* Kalın yazı */
+    color: #007BFF; /* Mavi renk */
+    display: block; /* Yeni satıra geç */
+    margin-top: 5px; /* Üst boşluk ekle */
+    transition: color 0.3s ease; /* Renk geçişi */
 }
+
+.business-counter span:hover {
+    color: #0056b3; /* Hover durumunda daha koyu mavi */
+}
+
 
 
 @keyframes fadeIn {
