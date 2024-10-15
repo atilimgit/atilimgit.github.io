@@ -34,7 +34,7 @@ body {
     }
 
     .business-name {
-        font-size: 2.2em;
+        font-size: 1.5em; /* Küçültüldü */
         font-weight: 600;
         color: #ffd700;
     }
@@ -61,7 +61,7 @@ body {
 h1 {
     color: #ffd700;
     margin-bottom: 20px;
-    font-size: 2.5em;
+    font-size: 2em; /* Küçültüldü */
 }
 
 input[type="text"],
@@ -92,6 +92,7 @@ select:focus {
     width: 150px;
     padding: 10px;
     font-size: 16px;
+    color: #fff; /* Yazı rengi beyaz */
 }
 
 .info-text {
@@ -127,10 +128,17 @@ select:focus {
     margin-right: 15px;
     border-radius: 50%;
     border: 2px solid #ffd700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3); /* Arka plan rengi eklendi */
+    color: #888; /* Yazı rengi gri */
+    font-size: 1.5em; /* Baş harfler için boyut */
+    font-weight: bold;
 }
 
 .business-name {
-    font-size: 1.8em;
+    font-size: 1.5em; /* Küçültüldü */
     color: #ffd700;
     margin-left: 15px;
 }
