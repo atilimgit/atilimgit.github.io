@@ -90,7 +90,7 @@ input[type="text"]:focus, select:focus {
 }
 
 .info-nocolor {
-    color: off;
+    color: white;
 }
 
 select {
