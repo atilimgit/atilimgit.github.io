@@ -73,7 +73,7 @@ input[type="text"]:focus, select:focus {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .filter-group {
