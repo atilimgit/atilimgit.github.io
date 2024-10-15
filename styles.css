@@ -14,11 +14,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .business-card {
-        flex-direction: column; 
-        align-items: flex-start; 
-        padding: 15px; 
-    }
 
     .business-logo {
         width: 50px; 
@@ -41,7 +36,18 @@ body {
     }
 
     body {
-        background-attachment: scroll;
+        background-attachment: scroll; 
+        background-size: cover; 
+    }
+
+    .business-list {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .business-card {
+        width: 100%; 
+        padding: 15px; 
     }
 }
 
