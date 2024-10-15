@@ -325,13 +325,17 @@ const closeButton = document.querySelector('.close-button');
 
 
 function showBusinessDetails(business) {
+    const locationEmoji = "📌"; 
+    const discountEmoji = "💰"; 
+    
     modalBusinessName.innerText = business.name;
-    modalBusinessAddress.innerHTML = `📍 <strong>Adres:</strong> ${business.address}`;
-    modalBusinessDiscount.innerHTML = `💸 <strong>İndirim oranı:</strong> %${business.discount}`;
+    modalBusinessAddress.innerHTML = `${locationEmoji} <strong>Adres:</strong> <u>${business.address}</u>`;
+    modalBusinessDiscount.innerHTML = `${discountEmoji} <strong>İndirim oranı:</strong> %${business.discount}\n`;
     modalBusinessDetails.innerText = business.details;
 
     modal.style.display = "block";
 }
+
 
 closeButton.addEventListener('click', () => {
     modal.style.display = "none";
