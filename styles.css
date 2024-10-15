@@ -20,10 +20,11 @@ body {
     .business-card {
         flex-direction: column;
         align-items: flex-start;
-        padding: 15px;
+        padding: 10px;
         transition: transform 0.3s;
         border-radius: 15px;
         background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .business-logo {
@@ -34,6 +35,18 @@ body {
         border-radius: 50%;
         margin-right: 10px;
         display: inline-block;
+    }
+    .pseudo-logo {
+        width: 50px; /* Adjust based on your design */
+        height: 50px; /* Adjust based on your design */
+        background-color: #ccc; /* Change color to fit your theme */
+        color: white; /* Change text color */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; /* Circular shape */
+        font-size: 20px; /* Adjust font size */
+        font-weight: bold; /* Bold text */
     }
 
     .business-name {
