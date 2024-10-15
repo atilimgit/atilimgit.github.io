@@ -164,3 +164,24 @@ footer a {
 footer a i {
     margin-right: 8px;
 }
+.pseudo-logo {
+    width: 50px; /* Adjust based on your design */
+    height: 50px; /* Adjust based on your design */
+    background-color: #ccc; /* Change color to fit your theme */
+    color: white; /* Change text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Circular shape */
+    font-size: 20px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+}
+.business-logo {
+    width: 50px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    background-size: cover; /* Cover to maintain aspect ratio */
+    background-position: center; /* Center the image */
+    border-radius: 50%; /* Make it circular, if desired */
+    margin-right: 10px; /* Space between logo and text */
+    display: inline-block; /* Make it inline-block to fit next to name */
+}
