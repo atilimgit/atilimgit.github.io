@@ -80,28 +80,31 @@ select:focus {
 .business-card {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
-    border: 1px solid #ffcc00;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .business-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .business-logo {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid #ffcc00;
 }
 
 .business-name {
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #ffcc00;
+    margin-left: 15px;
 }
 
 .business-detail {
@@ -111,6 +114,7 @@ select:focus {
     border-radius: 5px;
     margin-top: 10px;
 }
+
 
 .business-detail p {
     margin: 5px 0;
