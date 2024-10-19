@@ -5,7 +5,7 @@ const businesses = [
       "district": "Yaşamkent",
       "discount": 10,
       "details": "Lezzetli Kajun menüleriyle kendinizi şımartın.",
-        //"logo": "background-image.jpg"
+      "logo": "kajun-logo.png"
   },
   {
       "name": "Dois Döner",
