@@ -36,7 +36,8 @@ body {
         border-radius: 50%;
         margin-right: 10px;
         display: inline-block;
-    }   
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }    
     .pseudo-logo {
         width: 50px; 
         height: 50px; 
@@ -64,20 +65,18 @@ body {
         width: 90%;
     }
 }
-
 .pseudo-logo {
-    width: 50px; 
-    height: 50px; 
-    background-color: #ccc; 
-    color: white; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%; 
-    font-size: 20px; 
-    font-weight: bold; 
-}
-
+        width: 50px; 
+        height: 50px; 
+        background-color: #ccc; 
+        color: white; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; 
+        font-size: 20px; 
+        font-weight: bold; 
+    }
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -92,6 +91,13 @@ h1 {
     color: #ffd700;
     margin-bottom: 20px;
     font-size: 2em; 
+}
+h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 2px solid #FFD700; 
 }
 
 input[type="text"],
@@ -150,7 +156,6 @@ select:focus {
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     background: rgba(30, 30, 30, 0.8);
-    justify-content: space-between;
 }
 
 .business-card:hover {
@@ -171,15 +176,12 @@ select:focus {
     color: #888; 
     font-size: 1.5em; 
     font-weight: bold;
-    flex-shrink: 0;
 }
 
 .business-name {
     font-size: 1.5em; 
     color: #ffd700;
     margin-left: 15px;
-    flex-grow: 1;
-    text-align: left;
 }
 
 .business-detail p {
@@ -247,41 +249,42 @@ footer {
     color: #fff;
     animation: fadeIn 0.5s;
 }
-
 .business-counter {
     background-color: #1a1a1a;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    margin: 20px 0;
+    border-radius: 8px; /* Yuvarlatılmış köşeler */
+    padding: 15px; /* İç boşluk */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Hafif gölge */
+    text-align: center; /* Ortala */
+    margin: 20px 0; /* Üst ve alt boşluk */
 }
 
+
 .business-counter h2 {
-    font-size: 20px;
-    font-weight: 500;
-    color: #B0B0B0;
-    letter-spacing: 0.5px;
-    margin: 0;
+    font-size: 20px; /* Daha küçük bir font boyutu */
+    font-weight: 500; /* Orta kalınlıkta yazı */
+    color: #B0B0B0; /* Açık gri renk */
+    letter-spacing: 0.5px; /* Harfler arasında boşluk */
+    margin: 0; /* Varsayılan margin'i sıfırla */
 }
 
 .business-counter span {
-    font-size: 28px;
-    font-weight: 700;
-    color: #FFD700;
-    display: block;
-    margin-top: 5px;
-    transition: color 0.3s ease;
+    font-size: 28px; /* Daha büyük bir font boyutu */
+    font-weight: 700; /* Kalın yazı */
+    color: #FFD700; /* Sarı renk */
+    display: block; /* Yeni satıra geç */
+    margin-top: 5px; /* Üst boşluk ekle */
+    transition: color 0.3s ease; /* Renk geçişi */
 }
 
 .business-counter span:hover {
-    color: #FFC107;
+    color: #FFC107; /* Daha koyu sarı hover durumu */
 }
 
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
 
 .close-button {
     color: #ffd700;
