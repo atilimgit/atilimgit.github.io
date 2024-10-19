@@ -384,26 +384,6 @@ function toggleBusinessDetails(businessId) {
     detailDiv.style.display = detailDiv.style.display === "none" || detailDiv.style.display === "" ? "block" : "none";
 }
 
-function toggleBusinesses(element) {
-  const businessList = element.nextElementSibling;
-  const isVisible = businessList.style.display === 'block';
-  
-  if (isVisible) {
-      businessList.classList.remove('fade-in');
-      businessList.classList.add('fade-out');
-      setTimeout(() => {
-          businessList.style.display = 'none';
-          element.innerHTML = '&#9660;'; 
-      }, 300); 
-  } else {
-      businessList.style.display = 'block';
-      businessList.classList.remove('fade-out');
-      businessList.classList.add('fade-in');
-      element.innerHTML = '&#9650;'; 
-  }
-}
-
-
 function filterBusinesses(businesses) {
     const searchQuery = document.getElementById('search').value.toLowerCase();
     const selectedDistrict = document.getElementById('district').value;
