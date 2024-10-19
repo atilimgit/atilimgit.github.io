@@ -348,14 +348,14 @@ window.addEventListener('click', (event) => {
 });
 
 function renderBusinessList(page) {
-    //const start = (page - 1) * itemsPerPage;
-   // const end = start + itemsPerPage;
-   // const filteredBusinesses = filterBusinesses(businesses).slice(start, end);
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    const filteredBusinesses = filterBusinesses(businesses).slice(start, end);
     
     const businessList = document.getElementById('business-list');
     businessList.innerHTML = '';
 
-    businesses.forEach(business => {
+    filteredBusinesses.forEach(business => {
         const card = document.createElement('div');
         card.classList.add('business-card');
 
@@ -429,33 +429,7 @@ function animateCounter(start, end, duration) {
     }, 100);
 }
 
-const districts = [...new Set(businesses.map(b => b.district))]; // Eşsiz semtler
-
-document.getElementById('show-by-district').addEventListener('click', () => {
-    const districtList = document.getElementById('district-list');
-    districtList.innerHTML = ''; 
-
-    if (districtList.style.display === "none" || districtList.style.display === "") {
-        districts.forEach(district => {
-            const item = document.createElement('div');
-            item.innerText = district;
-            item.classList.add('district-item');
-            item.addEventListener('click', () => filterByDistrict(district));
-            districtList.appendChild(item);
-        });
-        districtList.style.display = "block"; 
-    } else {
-        districtList.style.display = "none";
-    }
-});
-
-function filterByDistrict(selectedDistrict) {
-    const filteredBusinesses = businesses.filter(b => b.district === selectedDistrict);
-    renderBusinessList(filteredBusinesses);
-
-    document.body.scrollIntoView({ behavior: 'smooth' });
-}
-
+// Sayacı başlat
 animateCounter(0, totalBusinesses, 2000); // 2 saniyede 0'dan toplam işletme sayısına
 
 function changePage(page) {

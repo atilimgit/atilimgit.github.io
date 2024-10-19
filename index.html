@@ -14,13 +14,41 @@
             <h2>Toplam işletme <span id="business-count" class="italic-text">0</span></h2>
         </div>
         <input type="text" id="search" placeholder="İşletme Ara...">
-        
-        <div class="button-group">
-            <button id="show-by-district">Semte Göre Göster</button>
-            <button id="show-by-discount">İndirim Oranına Göster</button>
+        <div class="filters">
+            <div class="filter-group">
+                <div class="info-nocolor">Semt Seçin:</div>
+                <select id="district">
+                    <option value="">Tümü</option>
+                    <option value="Kampüs">Kampüs</option>
+                    <option value="Bahçeli">Bahçeli</option>
+                    <option value="Kızılay">Kızılay</option>
+                    <option value="Tunalı">Tunalı</option>
+                    <option value="İncek">İncek</option>
+                    <option value="Çayyolu">Çayyolu</option>
+                    <option value="Ümitköy">Ümitköy</option>
+                    <option value="Yaşamkent">Yaşamkent</option>
+                    <option value="Anıttepe">Anıttepe</option>
+                    <option value="Kolej">Kolej</option>
+                    <option value="Altınoran">Altınoran</option>
+                    <option value="Cepa">Cepa</option>
+                    <option value="Nokta">Nokta</option>
+
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <div class="info-nocolor">İndirim Oranı:</div>
+                <select id="discount">
+                    <option value="">Tümü</option>
+                    <option value="0">Diğer</option>
+                    <option value="10">10% ve üstü</option>
+                    <option value="20">20% ve üstü</option>
+                    <option value="30">30% ve üstü</option>
+                </select>
+    
+            </div>
         </div>
 
-        <div id="district-list" class="district-list"></div>
         <div id="business-list" class="business-list"></div>
         <div class="pagination" id="pagination"></div>
         
