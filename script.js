@@ -419,12 +419,14 @@ function displayBusinesses(filteredBusinesses) {
   const districts = [...new Set(filteredBusinesses.map(b => b.district))]; // Semtleri al
 
   districts.forEach(district => {
+      // Semt başlığını ekle
       const districtHeader = document.createElement('h3');
       districtHeader.textContent = district.toUpperCase();
       districtHeader.style.marginTop = '20px';
       districtHeader.style.color = '#FFD700';
       businessList.appendChild(districtHeader);
 
+      // İlgili işletmeleri ekle
       const filtered = filteredBusinesses.filter(b => b.district === district);
       filtered.forEach(business => {
           const businessCard = document.createElement('div');
@@ -437,7 +439,7 @@ function displayBusinesses(filteredBusinesses) {
                   <p>${business.discount}</p>
               </div>
           `;
-          businessCard.addEventListener('click', () => showModal(business));
+          businessCard.addEventListener('click', () => showModal(business)); // Modal gösterme
           businessList.appendChild(businessCard);
       });
   });
