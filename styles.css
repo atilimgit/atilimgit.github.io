@@ -91,13 +91,7 @@ h1 {
     margin-bottom: 20px;
     font-size: 2em; 
 }
-h3 {
-    font-size: 1.8em;
-    font-weight: bold;
-    text-align: left;
-    padding: 10px 0;
-    border-bottom: 2px solid #FFD700; 
-}
+
 
 input[type="text"],
 select {
@@ -156,11 +150,11 @@ select:focus {
 .business-card {
     display: flex;
     align-items: center;
+    justify-content: center; /* Tam ortala */
     padding: 20px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     background: rgba(30, 30, 30, 0.8);
-    justify-content: space-between;
 }
 
 .business-logo {
@@ -181,9 +175,9 @@ select:focus {
 .business-name {
     font-size: 1.5em; 
     color: #ffd700;
-    margin-left: 15px;
-    flex-grow: 1;
-    text-align: center; /* Ortala */
+    margin-left: 15px; 
+    text-align: center; /* Metni ortala */
+    flex-grow: 1; /* Genişliği kapla */
 }
 
 .business-detail p {
