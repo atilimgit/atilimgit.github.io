@@ -290,3 +290,28 @@ footer {
 .close-button:focus {
     color: #fff;
 }
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    background-color: #007BFF; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #0056b3; 
+}
+
+.district-list {
+    display: none; 
+    margin-top: 10px;
+}
