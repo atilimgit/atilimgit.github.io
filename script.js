@@ -414,19 +414,17 @@ function renderPagination() {
 
 function displayBusinesses(filteredBusinesses) {
   const businessList = document.getElementById('business-list');
-  businessList.innerHTML = ''; // Önceki içerikleri temizle
+  businessList.innerHTML = '';
 
-  const districts = [...new Set(filteredBusinesses.map(b => b.district))]; // Semtleri al
+  const districts = [...new Set(filteredBusinesses.map(b => b.district))];
 
   districts.forEach(district => {
-      // Semt başlığını ekle
       const districtHeader = document.createElement('h3');
       districtHeader.textContent = district.toUpperCase();
       districtHeader.style.marginTop = '20px';
       districtHeader.style.color = '#FFD700';
       businessList.appendChild(districtHeader);
 
-      // İlgili işletmeleri ekle
       const filtered = filteredBusinesses.filter(b => b.district === district);
       filtered.forEach(business => {
           const businessCard = document.createElement('div');
@@ -434,12 +432,8 @@ function displayBusinesses(filteredBusinesses) {
           businessCard.innerHTML = `
               <div class="business-logo">${business.name.charAt(0)}</div>
               <div class="business-name">${business.name}</div>
-              <div class="business-detail">
-                  <p>${business.address}</p>
-                  <p>${business.discount}</p>
-              </div>
           `;
-          businessCard.addEventListener('click', () => showModal(business)); // Modal gösterme
+          businessCard.addEventListener('click', () => showModal(business));
           businessList.appendChild(businessCard);
       });
   });
@@ -447,7 +441,7 @@ function displayBusinesses(filteredBusinesses) {
 
 function showModal(business) {
   document.getElementById('modal-business-name').textContent = business.name;
-  document.getElementById('modal-business-address').textContent = business.address;
+  document.getElementById('modal-business-address').textContent = `Adres: ${business.address}`;
   document.getElementById('modal-business-discount').textContent = `İndirim: ${business.discount}`;
   document.getElementById('modal-business-details').textContent = business.details;
 
@@ -471,24 +465,21 @@ function filterBusinesses() {
   const selectedDistrict = document.getElementById('district').value;
   const selectedDiscount = document.getElementById('discount').value;
 
-  let filteredBusinesses = businesses.filter(b => {
-      const matchesSearch = b.name.toLowerCase().includes(searchValue);
-      const matchesDistrict = selectedDistrict ? b.district === selectedDistrict : true;
-      const matchesDiscount = selectedDiscount ? parseInt(b.discount) >= parseInt(selectedDiscount) : true;
-
+  let filteredBusinesses = businesses.filter(business => {
+      const matchesSearch = business.name.toLowerCase().includes(searchValue);
+      const matchesDistrict = selectedDistrict ? business.district === selectedDistrict : true;
+      const matchesDiscount = selectedDiscount ? parseInt(business.discount) >= parseInt(selectedDiscount) : true;
       return matchesSearch && matchesDistrict && matchesDiscount;
   });
 
   displayBusinesses(filteredBusinesses);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  displayBusinesses(businesses); // Tüm işletmeleri göster
+document.getElementById('search').addEventListener('input', filterBusinesses);
+document.getElementById('district').addEventListener('change', filterBusinesses);
+document.getElementById('discount').addEventListener('change', filterBusinesses);
 
-  document.getElementById('search').addEventListener('input', filterBusinesses);
-  document.getElementById('district').addEventListener('change', filterBusinesses);
-  document.getElementById('discount').addEventListener('change', filterBusinesses);
-});
+displayBusinesses(businesses);
 
 const totalBusinesses = businesses.length;
 
