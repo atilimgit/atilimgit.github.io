@@ -412,6 +412,40 @@ function renderPagination() {
     }
 }
 
+
+function displayBusinesses() {
+  const businessList = document.getElementById('business-list');
+  businessList.innerHTML = ''; 
+
+  const districts = [...new Set(businesses.map(b => b.district))]; 
+
+  districts.forEach(district => {
+      const districtHeader = document.createElement('h3');
+      districtHeader.textContent = district.toUpperCase();
+      districtHeader.style.marginTop = '20px';
+      districtHeader.style.color = '#FFD700';
+      businessList.appendChild(districtHeader);
+
+      const filteredBusinesses = businesses.filter(b => b.district === district);
+      filteredBusinesses.forEach(business => {
+          const businessCard = document.createElement('div');
+          businessCard.className = 'business-card';
+          businessCard.innerHTML = `
+              <div class="business-logo">${business.name.charAt(0)}</div>
+              <div class="business-name">${business.name}</div>
+              <div class="business-detail">
+                  <p>${business.address}</p>
+                  <p>${business.discount}</p>
+                  <p>${business.details}</p>
+              </div>
+          `;
+          businessList.appendChild(businessCard);
+      });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', displayBusinesses);
+
 const totalBusinesses = businesses.length;
 
 function animateCounter(start, end, duration) {
