@@ -412,12 +412,11 @@ function renderPagination() {
     }
 }
 
-
-function displayBusinesses() {
+function displayBusinesses(filteredBusinesses) {
   const businessList = document.getElementById('business-list');
   businessList.innerHTML = ''; 
 
-  const districts = [...new Set(businesses.map(b => b.district))]; 
+  const districts = [...new Set(filteredBusinesses.map(b => b.district))]; // Semtleri al
 
   districts.forEach(district => {
       const districtHeader = document.createElement('h3');
@@ -426,8 +425,9 @@ function displayBusinesses() {
       districtHeader.style.color = '#FFD700';
       businessList.appendChild(districtHeader);
 
-      const filteredBusinesses = businesses.filter(b => b.district === district);
-      filteredBusinesses.forEach(business => {
+      
+      const filtered = filteredBusinesses.filter(b => b.district === district);
+      filtered.forEach(business => {
           const businessCard = document.createElement('div');
           businessCard.className = 'business-card';
           businessCard.innerHTML = `
@@ -444,7 +444,29 @@ function displayBusinesses() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', displayBusinesses);
+function filterBusinesses() {
+  const searchValue = document.getElementById('search').value.toLowerCase();
+  const selectedDistrict = document.getElementById('district').value;
+  const selectedDiscount = document.getElementById('discount').value;
+
+  let filteredBusinesses = businesses.filter(b => {
+      const matchesSearch = b.name.toLowerCase().includes(searchValue);
+      const matchesDistrict = selectedDistrict ? b.district === selectedDistrict : true;
+      const matchesDiscount = selectedDiscount ? parseInt(b.discount) >= parseInt(selectedDiscount) : true;
+
+      return matchesSearch && matchesDistrict && matchesDiscount;
+  });
+
+  displayBusinesses(filteredBusinesses);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  displayBusinesses(businesses); 
+
+  document.getElementById('search').addEventListener('input', filterBusinesses);
+  document.getElementById('district').addEventListener('change', filterBusinesses);
+  document.getElementById('discount').addEventListener('change', filterBusinesses);
+});
 
 const totalBusinesses = businesses.length;
 
