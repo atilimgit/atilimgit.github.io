@@ -414,7 +414,7 @@ function renderPagination() {
 
 function displayBusinesses(filteredBusinesses) {
   const businessList = document.getElementById('business-list');
-  businessList.innerHTML = ''; 
+  businessList.innerHTML = ''; // Önceki içerikleri temizle
 
   const districts = [...new Set(filteredBusinesses.map(b => b.district))]; // Semtleri al
 
@@ -425,7 +425,6 @@ function displayBusinesses(filteredBusinesses) {
       districtHeader.style.color = '#FFD700';
       businessList.appendChild(districtHeader);
 
-      
       const filtered = filteredBusinesses.filter(b => b.district === district);
       filtered.forEach(business => {
           const businessCard = document.createElement('div');
@@ -436,13 +435,34 @@ function displayBusinesses(filteredBusinesses) {
               <div class="business-detail">
                   <p>${business.address}</p>
                   <p>${business.discount}</p>
-                  <p>${business.details}</p>
               </div>
           `;
+          businessCard.addEventListener('click', () => showModal(business));
           businessList.appendChild(businessCard);
       });
   });
 }
+
+function showModal(business) {
+  document.getElementById('modal-business-name').textContent = business.name;
+  document.getElementById('modal-business-address').textContent = business.address;
+  document.getElementById('modal-business-discount').textContent = `İndirim: ${business.discount}`;
+  document.getElementById('modal-business-details').textContent = business.details;
+
+  const modal = document.getElementById('business-modal');
+  modal.style.display = 'block';
+}
+
+document.querySelector('.close-button').addEventListener('click', () => {
+  document.getElementById('business-modal').style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+  const modal = document.getElementById('business-modal');
+  if (event.target === modal) {
+      modal.style.display = 'none';
+  }
+});
 
 function filterBusinesses() {
   const searchValue = document.getElementById('search').value.toLowerCase();
@@ -461,7 +481,7 @@ function filterBusinesses() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  displayBusinesses(businesses); 
+  displayBusinesses(businesses); // Tüm işletmeleri göster
 
   document.getElementById('search').addEventListener('input', filterBusinesses);
   document.getElementById('district').addEventListener('change', filterBusinesses);
