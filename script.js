@@ -21,7 +21,7 @@ const businesses = [
     "district": "İncek",
     "discount": 15,
     "details": "Atılım Store, öğrencilere özel indirimlerle kaliteli ürünler sunuyor.",
-    //"logo": "background-image.jpg"
+    "logo": "astore.jpg"
   },
   {
       "name": "KajunToGo",
