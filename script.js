@@ -430,23 +430,27 @@ function displayBusinesses(filteredBusinesses) {
           const businessCard = document.createElement('div');
           businessCard.className = 'business-card';
           businessCard.innerHTML = `
-              <div class="business-logo" style="background-image: url('${business.logo}');">
-                  ${business.logo ? '' : `<div class="pseudo-logo">${business.name.charAt(0)}</div>`}
-              </div>
+              <div class="business-logo">${business.logo ? `<img src="${business.logo}" alt="${business.name} logo">` : business.name.charAt(0)}</div>
               <div class="business-details">
-                  <div class="business-name">
-                      ${business.name}
-                      <span class="discount modern-discount"> %${business.discount}</span>
-                  </div>
+                  <div class="business-name">${business.name} <span class="discount">${business.discount}</span></div>
                   <div class="business-detail">
-                      <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(business.address)}" target="_blank" class="business-address">${business.address}</a>
+                      <button class="map-button" onclick="openMap('${encodeURIComponent(business.address)}')">Haritayı Aç</button>
                   </div>
               </div>
           `;
+          
           businessCard.addEventListener('click', () => showModal(business));
           businessList.appendChild(businessCard);
       });
   });
+}
+function openMap(address) {
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const mapsUrl = isIOS 
+      ? `https://maps.apple.com/?q=${address}` 
+      : `https://www.google.com/maps/search/?api=1&query=${address}`;
+  
+  window.open(mapsUrl, '_blank');
 }
 
 
