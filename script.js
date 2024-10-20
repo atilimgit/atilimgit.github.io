@@ -413,31 +413,42 @@ function renderPagination() {
 }
 
 function displayBusinesses(filteredBusinesses) {
-    const businessList = document.getElementById('business-list');
-    businessList.innerHTML = '';
+  const businessList = document.getElementById('business-list');
+  businessList.innerHTML = '';
 
-    const districts = [...new Set(filteredBusinesses.map(b => b.district))];
+  const districts = [...new Set(filteredBusinesses.map(b => b.district))];
 
-    districts.forEach(district => {
-        const districtHeader = document.createElement('h3');
-        districtHeader.textContent = district.toUpperCase();
-        districtHeader.style.marginTop = '20px';
-        districtHeader.style.color = '#FFD700';
-        businessList.appendChild(districtHeader);
+  districts.forEach(district => {
+      const districtHeader = document.createElement('h3');
+      districtHeader.textContent = district.toUpperCase();
+      districtHeader.style.marginTop = '20px';
+      districtHeader.style.color = '#FFD700';
+      businessList.appendChild(districtHeader);
 
-        const filtered = filteredBusinesses.filter(b => b.district === district);
-        filtered.forEach(business => {
-            const businessCard = document.createElement('div');
-            businessCard.className = 'business-card';
-            businessCard.innerHTML = `
-                <div class="business-logo">${business.name.charAt(0)}</div>
-                <div class="business-name">${business.name}</div>
-            `;
-            businessCard.addEventListener('click', () => showModal(business));
-            businessList.appendChild(businessCard);
-        });
-    });
+      const filtered = filteredBusinesses.filter(b => b.district === district);
+      filtered.forEach(business => {
+          const businessCard = document.createElement('div');
+          businessCard.className = 'business-card';
+          businessCard.innerHTML = `
+              <div class="business-logo" style="background-image: url('${business.logo}');">
+                  ${business.logo ? '' : `<div class="pseudo-logo">${business.name.charAt(0)}</div>`}
+              </div>
+              <div class="business-details">
+                  <div class="business-name">
+                      ${business.name}
+                      <span class="discount" style="color: #B0B0B0; font-weight: bold;"> %${business.discount}</span>
+                  </div>
+                  <div class="business-detail">
+                      <p>${business.address}</p>
+                  </div>
+              </div>
+          `;
+          businessCard.addEventListener('click', () => showModal(business));
+          businessList.appendChild(businessCard);
+      });
+  });
 }
+
 
 function showModal(business) {
     document.getElementById('modal-business-name').textContent = business.name;
