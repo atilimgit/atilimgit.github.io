@@ -8,6 +8,14 @@ const businesses = [
       "logo": "background-image.jpg"
   },
   {
+    "name": "Zaytung Zone",
+    "adress": "Zaytung zone, kızılay",
+    "district": "Kızılay-Tunalı",
+    "discount": 10,
+    "details": "Lezzetli yemekler ve alkol!",
+    "logo": "background-image.jpg"
+  },
+  {
       "name": "KajunToGo",
       "address": "Yaşamkent, 3250. Cd. no 26 D:51, 06810 Çankaya/Ankara, Türkiye",
       "district": "Çayyolu-Ümitköy",
@@ -40,7 +48,7 @@ const businesses = [
       "logo": "background-image.jpg"
   },
   {
-      "name": "Roma Antico Coffee",
+      "name": "Roma Antico",
       "address": "Yukarıbahçelievler mahallesi, Oğuzhan Asiltürk Caddesi No:16/A, 06490 Çankaya/Ankara, Türkiye",
       "district": "Bahçelievler",
       "discount": 10,
@@ -127,14 +135,7 @@ const businesses = [
       "details": "Çeşitli yemek ve içecekler.",
       "logo": "background-image.jpg"
   },
-  {
-      "name": "Zaytung Zone",
-      "adress": "Zaytung zone, kızılay",
-      "district": "Kızılay-Tunalı",
-      "discount": 10,
-      "details": "Lezzetli yemekler ve alkol!",
-      "logo": "background-image.jpg"
-  },
+
   {
     "name": "Altı Üstü Bar",
     "adress": "Altı üstü bar, kızılay",
