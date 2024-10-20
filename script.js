@@ -324,6 +324,36 @@ const modalBusinessDetails = document.getElementById('modal-business-details');
 const closeButton = document.querySelector('.close-button');
 
 
+
+businesses.forEach(business => {
+  const card = document.createElement('div');
+  card.className = 'business-card';
+
+  // İndirim etiketi
+  const discountLabel = document.createElement('div');
+  discountLabel.className = 'discount-label';
+  discountLabel.innerText = business.discount; // İndirim oranını buraya yaz
+
+  const logoElement = document.createElement('div');
+  logoElement.className = 'business-logo';
+  if (business.logo) {
+      logoElement.style.backgroundImage = `url(${business.logo})`;
+  } else {
+      logoElement.innerHTML = `<span class="logo-initial">${business.name.charAt(0).toUpperCase()}</span>`;
+  }
+
+  const nameElement = document.createElement('div');
+  nameElement.className = 'business-name';
+  nameElement.innerText = business.name;
+
+  // Kartı oluştururken indirim etiketini ekle
+  card.appendChild(discountLabel);
+  card.appendChild(logoElement);
+  card.appendChild(nameElement);
+
+  document.getElementById('business-list').appendChild(card);
+});
+
 function showBusinessDetails(business) {
     const locationEmoji = "📌"; 
     const discountEmoji = "💰"; 
