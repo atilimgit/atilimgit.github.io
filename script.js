@@ -436,10 +436,10 @@ function displayBusinesses(filteredBusinesses) {
               <div class="business-details">
                   <div class="business-name">
                       ${business.name}
-                      <span class="discount" style="color: #B0B0B0; font-weight: bold;"> %${business.discount}</span>
+                      <span class="discount modern-discount"> %${business.discount}</span>
                   </div>
                   <div class="business-detail">
-                      <p>${business.address}</p>
+                      <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(business.address)}" target="_blank" class="business-address">${business.address}</a>
                   </div>
               </div>
           `;
@@ -448,6 +448,7 @@ function displayBusinesses(filteredBusinesses) {
       });
   });
 }
+
 
 
 function showModal(business) {

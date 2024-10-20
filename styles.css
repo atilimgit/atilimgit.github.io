@@ -105,6 +105,27 @@ h1 {
     font-size: 1em; 
 }
 
+.modern-discount {
+    color: #FFD700;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 10px; /* İşletme adı ile indirim oranı arasında boşluk */
+}
+
+.business-address {
+    color: #B0B0B0; /* Açık gri renk */
+    text-decoration: underline; /* Altı çizili */
+    cursor: pointer; /* İmleç değiştirme */
+    transition: color 0.3s;
+}
+
+.business-address:hover {
+    color: #FFD700; /* Hover durumunda sarı renk */
+}
+
+
 input[type="text"],
 select {
     width: calc(50% - 10px);
