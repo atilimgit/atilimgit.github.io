@@ -28,9 +28,6 @@ body {
         background: rgba(255, 255, 255, 0.2);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
-    .modern-discount {
-        padding: 8px 15px; 
-    }
     .business-logo {
         width: 50px;
         height: 50px;
@@ -54,7 +51,7 @@ body {
     }
 
     .business-name {
-        font-size: 1.5em; 
+        font-size: 1.2em; 
         font-weight: 600;
         color: #ffd700;
     }
