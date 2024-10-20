@@ -49,7 +49,7 @@ const businesses = [
   },
   {
       "name": "Coffee Sumatra",
-      "address": "Coffee Sumatra, 7. cadde",
+      "address": "Coffee Sumatra, bahçelievler",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Özel Sumatra kahveleriyle keyifli anlar.",
@@ -251,7 +251,7 @@ const businesses = [
   },
   {
       "name": "Anıttepe şubesi",
-      "address": "Tunus ıslak hamburger, maltepe.",
+      "address": "Tunus ıslak hamburger, anıttepe.",
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Anıttepe'deki Tunus Islak Hamburger, hızlı servisi ve lezzetiyle öne çıkıyor.",
