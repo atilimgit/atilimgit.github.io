@@ -239,7 +239,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Bahçeli'deki Tunus Islak Hamburger, herkesin favorisi! Lezzetli ıslak hamburgerleri denemelisiniz.",
-      "logo": "tunus.png"
+      //"logo": "tunus.png"
   },
   {
       "name": "Meşrutiyet şubesi",
@@ -247,7 +247,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Lezzetiyle ünlü olan Tunus Islak Hamburger, her damak zevkine hitap ediyor.",
-      "logo": "tunus.png"
+      //"logo": "tunus.png"
   },
   {
       "name": "Anıttepe şubesi",
@@ -255,7 +255,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Anıttepe'deki Tunus Islak Hamburger, hızlı servisi ve lezzetiyle öne çıkıyor.",
-      "logo": "tunus.png"
+      //"logo": "tunus.png"
   },
   {
       "name": "Tunus şubesi",
@@ -263,7 +263,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Tunus Islak Hamburger, sıcak ve taze hamburgerleriyle herkesin ilgisini çekiyor.",
-      "logo": "tunus.png"
+      //"logo": "tunus.png"
   },
   {
       "name": "Kolej şubesi",
@@ -271,7 +271,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Kolej bölgesinde Tunus Islak Hamburger ile doyurucu bir öğün geçirin.",
-      "logo": "tunus.png"
+      //"logo": "tunus.png"
   },
   {
       "name": "Altınoran şubesi",
