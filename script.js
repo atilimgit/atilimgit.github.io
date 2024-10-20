@@ -1,6 +1,6 @@
 const businesses = [
   {
-      "name": "KajunToGo",
+      "name": "KajunToGo ",
       "address": "Yaşamkent, 3250. Cd. no 26 D:51, 06810 Çankaya/Ankara, Türkiye",
       "district": "Yaşamkent",
       "discount": 10,
@@ -313,34 +313,6 @@ const businesses = [
   }
 ];
 
-
-businesses.forEach(business => {
-  const card = document.createElement('div');
-  card.className = 'business-card';
-  const discountLabel = document.createElement('div');
-  discountLabel.className = 'discount-label';
-  discountLabel.innerText = business.discount; // İndirim oranını buraya yaz
-
-  const logoElement = document.createElement('div');
-  logoElement.className = 'business-logo';
-  if (business.logo) {
-      logoElement.style.backgroundImage = `url(${business.logo})`;
-  } else {
-      logoElement.innerHTML = `<span class="logo-initial">${business.name.charAt(0).toUpperCase()}</span>`;
-  }
-
-  const nameElement = document.createElement('div');
-  nameElement.className = 'business-name';
-  nameElement.innerText = business.name;
-
-
-  card.appendChild(discountLabel);
-  card.appendChild(logoElement);
-  card.appendChild(nameElement);
-
-  document.getElementById('business-list').appendChild(card);
-});
-
 const itemsPerPage = 10;
 let currentPage = 1;
 
@@ -350,7 +322,6 @@ const modalBusinessAddress = document.getElementById('modal-business-address');
 const modalBusinessDiscount = document.getElementById('modal-business-discount');
 const modalBusinessDetails = document.getElementById('modal-business-details');
 const closeButton = document.querySelector('.close-button');
-
 
 
 function showBusinessDetails(business) {
@@ -442,66 +413,66 @@ function renderPagination() {
 }
 
 function displayBusinesses(filteredBusinesses) {
-  const businessList = document.getElementById('business-list');
-  businessList.innerHTML = '';
+    const businessList = document.getElementById('business-list');
+    businessList.innerHTML = '';
 
-  const districts = [...new Set(filteredBusinesses.map(b => b.district))];
+    const districts = [...new Set(filteredBusinesses.map(b => b.district))];
 
-  districts.forEach(district => {
-      const districtHeader = document.createElement('h3');
-      districtHeader.textContent = district.toUpperCase();
-      districtHeader.style.marginTop = '20px';
-      districtHeader.style.color = '#FFD700';
-      businessList.appendChild(districtHeader);
+    districts.forEach(district => {
+        const districtHeader = document.createElement('h3');
+        districtHeader.textContent = district.toUpperCase();
+        districtHeader.style.marginTop = '20px';
+        districtHeader.style.color = '#FFD700';
+        businessList.appendChild(districtHeader);
 
-      const filtered = filteredBusinesses.filter(b => b.district === district);
-      filtered.forEach(business => {
-          const businessCard = document.createElement('div');
-          businessCard.className = 'business-card';
-          businessCard.innerHTML = `
-              <div class="business-logo">${business.name.charAt(0)}</div>
-              <div class="business-name">${business.name}</div>
-          `;
-          businessCard.addEventListener('click', () => showModal(business));
-          businessList.appendChild(businessCard);
-      });
-  });
+        const filtered = filteredBusinesses.filter(b => b.district === district);
+        filtered.forEach(business => {
+            const businessCard = document.createElement('div');
+            businessCard.className = 'business-card';
+            businessCard.innerHTML = `
+                <div class="business-logo">${business.name.charAt(0)}</div>
+                <div class="business-name">${business.name}</div>
+            `;
+            businessCard.addEventListener('click', () => showModal(business));
+            businessList.appendChild(businessCard);
+        });
+    });
 }
 
 function showModal(business) {
-  document.getElementById('modal-business-name').textContent = business.name;
-  document.getElementById('modal-business-address').textContent = `Adres: ${business.address}`;
-  document.getElementById('modal-business-discount').textContent = `İndirim: ${business.discount}`;
-  document.getElementById('modal-business-details').textContent = business.details;
+    document.getElementById('modal-business-name').textContent = business.name;
+    document.getElementById('modal-business-address').textContent = `Adres: ${business.address}`;
+    document.getElementById('modal-business-discount').textContent = `İndirim: ${business.discount}`;
+    document.getElementById('modal-business-details').textContent = business.details;
 
-  const modal = document.getElementById('business-modal');
-  modal.style.display = 'block';
+    const modal = document.getElementById('business-modal');
+    modal.style.display = 'block';
 }
 
 document.querySelector('.close-button').addEventListener('click', () => {
-  document.getElementById('business-modal').style.display = 'none';
+    document.getElementById('business-modal').style.display = 'none';
 });
 
 window.addEventListener('click', (event) => {
-  const modal = document.getElementById('business-modal');
-  if (event.target === modal) {
-      modal.style.display = 'none';
-  }
+    const modal = document.getElementById('business-modal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
 });
 
 function filterBusinesses() {
-  const searchValue = document.getElementById('search').value.toLowerCase();
-  const selectedDistrict = document.getElementById('district').value;
-  const selectedDiscount = document.getElementById('discount').value;
+    const searchValue = document.getElementById('search').value.toLowerCase();
+    const selectedDistrict = document.getElementById('district').value;
+    const selectedDiscount = document.getElementById('discount').value;
 
-  let filteredBusinesses = businesses.filter(business => {
-      const matchesSearch = business.name.toLowerCase().includes(searchValue);
-      const matchesDistrict = selectedDistrict ? business.district === selectedDistrict : true;
-      const matchesDiscount = selectedDiscount ? parseInt(business.discount) >= parseInt(selectedDiscount) : true;
-      return matchesSearch && matchesDistrict && matchesDiscount;
-  });
+    let filteredBusinesses = businesses.filter(business => {
+        const matchesSearch = business.name.toLowerCase().includes(searchValue);
+        const matchesDistrict = selectedDistrict ? business.district === selectedDistrict : true;
+        const matchesDiscount = selectedDiscount ? parseInt(business.discount) >= parseInt(selectedDiscount) : true;
+        return matchesSearch && matchesDistrict && matchesDiscount;
+    });
 
-  displayBusinesses(filteredBusinesses);
+    displayBusinesses(filteredBusinesses);
 }
 
 document.getElementById('search').addEventListener('input', filterBusinesses);
