@@ -9,7 +9,7 @@ const businesses = [
   },
   {
     "name": "Zaytung Zone",
-    "adress": "Zaytung zone, kızılay",
+    "address": "Zaytung zone, kızılay",
     "district": "Kızılay-Tunalı",
     "discount": 10,
     "details": "Lezzetli yemekler ve alkol!",
@@ -146,7 +146,7 @@ const businesses = [
 
   {
     "name": "Altı Üstü Bar",
-    "adress": "Altı üstü bar, kızılay",
+    "address": "Altı üstü bar, kızılay",
     "district": "Kızılay-Tunalı",
     "discount": 10,
     "details": "Alkol, müzik ve leziz yemekler!",
@@ -154,7 +154,7 @@ const businesses = [
   },
   {
     "name": "Tiyatro Bar",
-    "adress": "Tiyatro bar, kızılay",
+    "address": "Tiyatro bar, kızılay",
     "district": "Kızılay-Tunalı",
     "discount": 10,
     "details": "Alkol, müzik ve leziz yemekler!",
