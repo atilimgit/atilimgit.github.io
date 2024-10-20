@@ -25,7 +25,7 @@ const businesses = [
   },
   {
       "name": "KajunToGo",
-      "address": "KajunToGo, yaşamkent",
+      "address": "Kajun Chicken Burgers To Go, yaşamkent",
       "district": "Çayyolu-Ümitköy",
       "discount": 10,
       "details": "Lezzetli Kajun menüleriyle kendinizi şımartın.",
@@ -170,8 +170,8 @@ const businesses = [
   },
   {
       "name": "The Coffee Company",
-      "address": "Çayyolu, Türkiye",
-      "district": "Coffee company, çayyolu",
+      "address": "Coffee company, çayyolu",
+      "district": "Çayyolu-Ümitköy",
       "discount": 15,
       "details": "Kahve severler için geniş seçenekler.",
       "logo": "background-image.jpg"
