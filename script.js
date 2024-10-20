@@ -73,7 +73,7 @@ const businesses = [
   },
   {
       "name": "Agartha Pub",
-      "address": "Agartha pub, bahçelievler",
+      "address": "Agartha Pub, bahçelievler, muammer aksoy caddesi",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Canlı müzik ve keyifli içecekler.",
@@ -121,7 +121,7 @@ const businesses = [
   },
   {
       "name": "Route NY",
-      "address": "Route, bahçelievler",
+      "address": "Route NY, bahçelievler",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "New York tarzı lezzetler.",
@@ -162,7 +162,7 @@ const businesses = [
   },
   {
       "name": "Komşu Meyhane",
-      "address": "Komşu meyhane, tunalı hilmi",
+      "address": "Komşu meyhane, tunalı",
       "district": "Kızılay-Tunalı",
       "discount": 0,
       "details": "Ev yapımı lezzetler sunan bir restoran.",
@@ -219,7 +219,7 @@ const businesses = [
   },
   {
       "name": "Dino Dürüm",
-      "address": "Dino dürüm, konur sokak",
+      "address": "Dino dürüm, kızılay",
       "district": "Kızılay-Tunalı",
       "discount": 10,
       "details": "Dino Dürüm'de taze ve lezzetli dürümler sizleri bekliyor.",
@@ -227,7 +227,7 @@ const businesses = [
   },
   {
       "name": "Esnaf Lokantaları",
-      "address": "Esnaf lokantaları, karanfil sokak",
+      "address": "Esnaf lokantaları, kızılay",
       "district": "Kızılay-Tunalı",
       "discount": 0,
       "details": "Esnaf Lokantası, samimi bir ortamda ev yemekleri sunar. Herkes için uygun fiyatlarla.",
