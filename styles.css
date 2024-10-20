@@ -122,21 +122,22 @@ h1 {
 
 
 .modern-discount {
-    background-color: rgba(255, 215, 0, 0.8); /* Sarı arka plan */
+    background-color: rgba(255, 215, 0, 0.7); /* Daha hafif sarı arka plan */
     color: #000; /* Siyah yazı rengi */
-    padding: 5px 10px; /* İç boşluk */
-    border-radius: 15px; /* Yuvarlatılmış köşeler */
+    padding: 3px 8px; /* Daha az iç boşluk */
+    border-radius: 12px; /* Yuvarlatılmış köşeler */
     font-weight: bold; /* Kalın yazı */
-    font-size: 1.2em; /* Yazı boyutu */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti */
-    margin-left: 10px; /* Sol boşluk */
+    font-size: 1em; /* Küçük yazı boyutu */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+    margin-left: 8px; /* Sol boşluk */
     transition: transform 0.3s, background-color 0.3s; /* Geçiş efekti */
 }
 
 .modern-discount:hover {
-    transform: scale(1.1); /* Hover durumunda büyüme efekti */
-    background-color: rgba(255, 215, 0, 1); /* Daha koyu sarı */
+    transform: scale(1.05); /* Hover durumunda küçük büyüme efekti */
+    background-color: rgba(255, 215, 0, 0.9); /* Hover durumunda daha koyu sarı */
 }
+
 
 
 .business-address {
