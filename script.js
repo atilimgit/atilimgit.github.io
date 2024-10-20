@@ -25,7 +25,7 @@ const businesses = [
   },
   {
       "name": "KajunToGo",
-      "address": "Kajun Chicken Burgers To Go, yaşamkent",
+      "address": "Kajun, Yaşamkent",
       "district": "Çayyolu-Ümitköy",
       "discount": 10,
       "details": "Lezzetli Kajun menüleriyle kendinizi şımartın.",
