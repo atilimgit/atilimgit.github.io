@@ -304,7 +304,7 @@ const businesses = [
       "logo": "background-image.jpg"
   },
   {
-      "name": "Mojo",
+      "name": "Mojo and More",
       "address": "Barbaros, Güniz Sk. 21A, 06680 Çankaya/Ankara, Türkiye.",
       "district": "Kızılay-Tunalı",
       "discount": 10,
