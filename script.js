@@ -5,7 +5,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 25,
       "details": "Kahvenizin her yudumunda kalite.",
-      "logo": "background-image.jpg"
+      "logo": "espresso.png"
   },
   {
     "name": "Zaytung Zone",
@@ -13,7 +13,7 @@ const businesses = [
     "district": "Kızılay-Tunalı",
     "discount": 10,
     "details": "Lezzetli yemekler ve alkol!",
-    "logo": "background-image.jpg"
+    "logo": "zaytung.png"
   },
   {
     "name": "Atılım Store",
@@ -21,7 +21,7 @@ const businesses = [
     "district": "İncek",
     "discount": 15,
     "details": "Atılım Store, öğrencilere özel indirimlerle kaliteli ürünler sunuyor.",
-    "logo": "background-image.jpg"
+    //"logo": "background-image.jpg"
   },
   {
       "name": "KajunToGo",
@@ -37,7 +37,7 @@ const businesses = [
       "district": "Çayyolu-Ümitköy",
       "discount": 10,
       "details": "Klasik dönerin modern yorumu.",
-      "logo": "background-image.jpg"
+      "logo": "dois.png"
   },
   {
       "name": "Sofa Burger&Fries",
@@ -45,7 +45,7 @@ const businesses = [
       "district": "Çayyolu-Ümitköy",
       "discount": 10,
       "details": "Taze malzemelerle hazırlanmış enfes hamburgerler.",
-      "logo": "background-image.jpg"
+      "logo": "sofa.png"
   },
   {
       "name": "Coffee Sumatra",
@@ -53,7 +53,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Özel Sumatra kahveleriyle keyifli anlar.",
-      "logo": "background-image.jpg"
+      "logo": "sumatra.jpg"
   },
   {
       "name": "Roma Antico",
@@ -61,7 +61,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 10,
       "details": "İtalyan kahve kültürünü keşfedin.",
-      "logo": "background-image.jpg"
+      "logo": "antico.jpg"
   },
   {
       "name": "Cake Art",
@@ -69,7 +69,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Ev yapımı lezzetli tatlılar.",
-      "logo": "background-image.jpg"
+      "logo": "cakeart.png"
   },
   {
       "name": "Agartha Pub",
@@ -77,7 +77,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Canlı müzik ve keyifli içecekler.",
-      "logo": "background-image.jpg"
+      "logo": "agartha.jpg"
   },
   {
       "name": "Pilav Üstü Aşk",
@@ -85,7 +85,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Lezzetli pilav üstü yemekler.",
-      "logo": "background-image.jpg"
+      "logo": "pilavustu.jpg"
   },
   {
       "name": "Fok Pub",
@@ -93,7 +93,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Eğlenceli atmosferde içkilerin tadını çıkarın.",
-      "logo": "background-image.jpg"
+      "logo": "fok.png"
   },
   {
       "name": "Banana Pudding",
@@ -101,7 +101,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 15,
       "details": "Unutulmaz muz tatlıları.",
-      "logo": "background-image.jpg"
+      "logo": "banana.jpg"
   },
   {
       "name": "Miniera Coffee",
@@ -109,7 +109,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 30,
       "details": "Kahve tutkunları için özel harmanlar.",
-      "logo": "background-image.jpg"
+      "logo": "miniera.jpg"
   },
   {
       "name": "Tabu Cafe",
@@ -117,7 +117,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Samimi atmosferde kahve keyfi.",
-      "logo": "background-image.jpg"
+      "logo": "tabu.jpg"
   },
   {
       "name": "Route NY",
@@ -125,7 +125,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 10,
       "details": "New York tarzı lezzetler.",
-      "logo": "background-image.jpg"
+      "logo": "route.jpg"
   },
   {
       "name": "Gloria Jeans",
@@ -133,7 +133,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 15,
       "details": "Dünya çapında kahve ve tatlılar.",
-      "logo": "background-image.jpg"
+      "logo": "gloriajeans.jpg"
   },
   {
       "name": "El Camino",
@@ -141,7 +141,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Çeşitli yemek ve içecekler.",
-      "logo": "background-image.jpg"
+      "logo": "elcamino.jpg"
   },
 
   {
@@ -150,7 +150,7 @@ const businesses = [
     "district": "Kızılay-Tunalı",
     "discount": 10,
     "details": "Alkol, müzik ve leziz yemekler!",
-    "logo": "background-image.jpg"
+    "logo": "altiustu.jpg"
   },
   {
     "name": "Tiyatro Bar",
@@ -158,7 +158,7 @@ const businesses = [
     "district": "Kızılay-Tunalı",
     "discount": 10,
     "details": "Alkol, müzik ve leziz yemekler!",
-    "logo": "background-image.jpg"
+    //"logo": "tiyatro.jpg"
   },
   {
       "name": "Komşu Meyhane",
@@ -166,7 +166,7 @@ const businesses = [
       "district": "Kızılay-Tunalı",
       "discount": 0,
       "details": "Ev yapımı lezzetler sunan bir restoran.",
-      "logo": "background-image.jpg"
+      "logo": "komsu.jpg"
   },
   {
       "name": "The Coffee Company",
@@ -174,7 +174,7 @@ const businesses = [
       "district": "Çayyolu-Ümitköy",
       "discount": 15,
       "details": "Kahve severler için geniş seçenekler.",
-      "logo": "background-image.jpg"
+      //"logo": "background-image.jpg"
   },
 
   {
@@ -183,7 +183,7 @@ const businesses = [
       "district": "İncek",
       "discount": 10,
       "details": "Lezzetli Cajun yemekleri.",
-      "logo": "background-image.jpg"
+      "logo": "kajun-logo.png"
   },
   {
       "name": "Halanın Yeri",
@@ -191,7 +191,7 @@ const businesses = [
       "district": "İncek",
       "discount": 5,
       "details": "Sıcak ve samimi bir ortamda yemek.",
-      "logo": "background-image.jpg"
+      //"logo": "background-image.jpg"
   },
   {
       "name": "Tarhana Kazanı",
@@ -199,7 +199,7 @@ const businesses = [
       "district": "Kızılay-Tunalı",
       "discount": 10,
       "details": "Lezzetli tarhana çorbası.",
-      "logo": "background-image.jpg"
+      "logo": "tarhana.jpg"
   },
   {
       "name": "Mersinli Ali Usta",
@@ -207,7 +207,7 @@ const businesses = [
       "district": "Kızılay-Tunalı",
       "discount": 10,
       "details": "Mersinli Ali Usta'nın tantunisi, lezzetiyle ünlüdür. Kesinlikle denemelisiniz!",
-      "logo": "background-image.jpg"
+      "logo": "mersinli.jpg"
   },
   {
       "name": "Talya Veteriner",
@@ -215,7 +215,7 @@ const businesses = [
       "district": "İncek",
       "discount": 10,
       "details": "Hayvan sağlığı için güvenilir veteriner hizmeti.",
-      "logo": "background-image.jpg"
+      "logo": "talyavet.jpg"
   },
   {
       "name": "Dino Dürüm",
@@ -223,7 +223,7 @@ const businesses = [
       "district": "Kızılay-Tunalı",
       "discount": 10,
       "details": "Dino Dürüm'de taze ve lezzetli dürümler sizleri bekliyor.",
-      "logo": "background-image.jpg"
+      //"logo": "background-image.jpg"
   },
   {
       "name": "Esnaf Lokantaları",
@@ -231,7 +231,7 @@ const businesses = [
       "district": "Kızılay-Tunalı",
       "discount": 0,
       "details": "Esnaf Lokantası, samimi bir ortamda ev yemekleri sunar. Herkes için uygun fiyatlarla.",
-      "logo": "background-image.jpg"
+      "logo": "esnaf.jpg"
   },
   {
       "name": "Bahçelievler şubesi",
@@ -239,7 +239,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Bahçeli'deki Tunus Islak Hamburger, herkesin favorisi! Lezzetli ıslak hamburgerleri denemelisiniz.",
-      "logo": "background-image.jpg"
+      "logo": "tunus.png"
   },
   {
       "name": "Meşrutiyet şubesi",
@@ -247,7 +247,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Lezzetiyle ünlü olan Tunus Islak Hamburger, her damak zevkine hitap ediyor.",
-      "logo": "background-image.jpg"
+      "logo": "tunus.png"
   },
   {
       "name": "Anıttepe şubesi",
@@ -255,7 +255,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Anıttepe'deki Tunus Islak Hamburger, hızlı servisi ve lezzetiyle öne çıkıyor.",
-      "logo": "background-image.jpg"
+      "logo": "tunus.png"
   },
   {
       "name": "Tunus şubesi",
@@ -263,7 +263,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Tunus Islak Hamburger, sıcak ve taze hamburgerleriyle herkesin ilgisini çekiyor.",
-      "logo": "background-image.jpg"
+      "logo": "tunus.png"
   },
   {
       "name": "Kolej şubesi",
@@ -271,7 +271,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Kolej bölgesinde Tunus Islak Hamburger ile doyurucu bir öğün geçirin.",
-      "logo": "background-image.jpg"
+      "logo": "tunus.png"
   },
   {
       "name": "Altınoran şubesi",
@@ -279,7 +279,7 @@ const businesses = [
       "district": "Nunchi Coffee",
       "discount": 10,
       "details": "Nunchi Coffee, rahat bir ortamda keyifli kahve deneyimi sunuyor.",
-      "logo": "background-image.jpg"
+      "logo": "nunchi.png"
   },
   {
       "name": "Nokta şubesi",
@@ -287,7 +287,7 @@ const businesses = [
       "district": "Nunchi Coffee",
       "discount": 10,
       "details": "Nokta'daki Nunchi Coffee, farklı kahve çeşitleriyle damak tadınıza hitap ediyor.",
-      "logo": "background-image.jpg"
+      "logo": "nunchi.png"
   },
   {
       "name": "Cepa şubesi",
@@ -295,7 +295,7 @@ const businesses = [
       "district": "Nunchi Coffee",
       "discount": 10,
       "details": "Cepa'da Nunchi Coffee, kahve severler için harika bir buluşma noktası.",
-      "logo": "background-image.jpg"
+      "logo": "nunchi.png"
   },
   {
       "name": "Komagene",
@@ -303,7 +303,7 @@ const businesses = [
       "district": "İncek",
       "discount": 15,
       "details": "Komagene'de sağlıklı ve lezzetli yiyecekler sizi bekliyor.",
-      "logo": "background-image.jpg"
+      "logo": "komagene.jpg"
   },
   {
       "name": "Mojo and More",
@@ -311,7 +311,7 @@ const businesses = [
       "district": "Kızılay-Tunalı",
       "discount": 10,
       "details": "Mojo'da keyifli bir atmosferde lezzetli yemekler yiyebilirsiniz.",
-      "logo": "background-image.jpg"
+      "logo": "mojo.png"
   },
   {
       "name": "Chocolabs",
@@ -319,7 +319,7 @@ const businesses = [
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Chocolabs, tatlı severler için vazgeçilmez bir durak!",
-      "logo": "background-image.jpg"
+      "logo": "chocolabs.png"
   },
   {
       "name": "Clinic Çayyolu Dişçi",
@@ -327,7 +327,7 @@ const businesses = [
       "district": "Çayyolu-Ümitköy",
       "discount": 20,
       "details": "Çayyolu'ndaki dişçi kliniği, profesyonel hizmet sunuyor.",
-      "logo": "background-image.jpg"
+      //"logo": "background-image.jpg"
   },
   {
       "name": "MackBear",
@@ -335,7 +335,7 @@ const businesses = [
       "district": "İncek",
       "discount": 10,
       "details": "MackBear, sağlıklı atıştırmalıklar ve lezzetli içecekler sunuyor.",
-      "logo": "background-image.jpg"
+      "logo": "mackbear.jpg"
   }
 ];
 
