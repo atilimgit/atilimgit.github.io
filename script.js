@@ -1,7 +1,7 @@
 const businesses = [
   {
       "name": "Espresso Check",
-      "address": "Bahçelievler, Prof. Muammer Aksoy Cd No:37/A, 06490 Çankaya/Ankara, Türkiye",
+      "address": "Espresso Check, bahçelievler",
       "district": "Bahçelievler",
       "discount": 25,
       "details": "Kahvenizin her yudumunda kalite.",
@@ -17,7 +17,7 @@ const businesses = [
   },
   {
     "name": "Atılım Store",
-    "address": "Kızılcaşar mahallesi, 1184. cad no:13, 06830 İncek, Gölbaşı/Ankara.",
+    "address": "Atılım store. kampüs",
     "district": "İncek",
     "discount": 15,
     "details": "Atılım Store, öğrencilere özel indirimlerle kaliteli ürünler sunuyor.",
@@ -25,7 +25,7 @@ const businesses = [
   },
   {
       "name": "KajunToGo",
-      "address": "Yaşamkent, 3250. Cd. no 26 D:51, 06810 Çankaya/Ankara, Türkiye",
+      "address": "KajunToGo, yaşamkent",
       "district": "Çayyolu-Ümitköy",
       "discount": 10,
       "details": "Lezzetli Kajun menüleriyle kendinizi şımartın.",
@@ -33,7 +33,7 @@ const businesses = [
   },
   {
       "name": "Dois Döner",
-      "address": "Yaşamkent, 3250. Cd. No: 26/BD, 06810 Çankaya/Ankara, Türkiye",
+      "address": "Dois Döner, yaşamkent",
       "district": "Çayyolu-Ümitköy",
       "discount": 10,
       "details": "Klasik dönerin modern yorumu.",
@@ -41,7 +41,7 @@ const businesses = [
   },
   {
       "name": "Sofa Burger&Fries",
-      "address": "Ümitköy, MutluKöy sitesi No:13 Ümitköy- Ankara, Mutlukent, 1948. Sk., 06810 Çankaya/Ankara, Türkiye",
+      "address": "Sofa burger/fries, ümitköy",
       "district": "Çayyolu-Ümitköy",
       "discount": 10,
       "details": "Taze malzemelerle hazırlanmış enfes hamburgerler.",
@@ -49,7 +49,7 @@ const businesses = [
   },
   {
       "name": "Coffee Sumatra",
-      "address": "Bahçelievler 7. Cadde: Yukarı Bahçelievler, Oğuzhan Asiltürk Caddesi No:26, 06490 Çankaya/Ankara, Türkiye",
+      "address": "Coffee Sumatra, 7. cadde",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Özel Sumatra kahveleriyle keyifli anlar.",
@@ -57,7 +57,7 @@ const businesses = [
   },
   {
       "name": "Roma Antico",
-      "address": "Yukarıbahçelievler mahallesi, Oğuzhan Asiltürk Caddesi No:16/A, 06490 Çankaya/Ankara, Türkiye",
+      "address": "Roma antico, bahçelievler",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "İtalyan kahve kültürünü keşfedin.",
@@ -65,7 +65,7 @@ const businesses = [
   },
   {
       "name": "Cake Art",
-      "address": "Bahçelievler, 54. Cad. 15/B, 06490 Çankaya/Ankara, Türkiye",
+      "address": "Cake art, bahçelievler",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Ev yapımı lezzetli tatlılar.",
@@ -73,7 +73,7 @@ const businesses = [
   },
   {
       "name": "Agartha Pub",
-      "address": "Bahçelievler, Prof. Muammer Aksoy Cd 35/B, 06490 Çankaya/Ankara, Türkiye",
+      "address": "Agartha pub, bahçelievler",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Canlı müzik ve keyifli içecekler.",
@@ -81,7 +81,7 @@ const businesses = [
   },
   {
       "name": "Pilav Üstü Aşk",
-      "address": "Bahçelievler, Azerbaycan Cd. No:59, 06490 Çankaya/Ankara, Türkiye",
+      "address": "Pilav üstü aşk, bahçelievler",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Lezzetli pilav üstü yemekler.",
@@ -89,7 +89,7 @@ const businesses = [
   },
   {
       "name": "Fok Pub",
-      "address": "Bahçelievler, 06490 Çankaya/Ankara, Türkiye",
+      "address": "Fok pub, bahçelievler",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Eğlenceli atmosferde içkilerin tadını çıkarın.",
@@ -97,7 +97,7 @@ const businesses = [
   },
   {
       "name": "Banana Pudding",
-      "address": "Yukarı Bahçelievler, 70. Sk. No:21 D:C, 06490 Çankaya/Ankara, Türkiye",
+      "address": "Banana pudding, bahçelievler",
       "district": "Bahçelievler",
       "discount": 15,
       "details": "Unutulmaz muz tatlıları.",
@@ -105,7 +105,7 @@ const businesses = [
   },
   {
       "name": "Miniera Coffee",
-      "address": "Yukarı Bahçelievler, 65. Sk. No:5/a, 06550 Çankaya/Ankara, Türkiye",
+      "address": "Miniera coffee, bahçelievler",
       "district": "Bahçelievler",
       "discount": 30,
       "details": "Kahve tutkunları için özel harmanlar.",
@@ -113,7 +113,7 @@ const businesses = [
   },
   {
       "name": "Tabu Cafe",
-      "address": "Yukarı Bahçelievler Mahallesi Aşkaabat Caddesi &, Yukarı Bahçelievler, 70. Sk. 20/A, 06490 Çankaya/Ankara, Türkiye",
+      "address": "Tabu cafe, bahçelievler",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Samimi atmosferde kahve keyfi.",
@@ -121,7 +121,7 @@ const businesses = [
   },
   {
       "name": "Route NY",
-      "address": "Bahçelievler, Azerbaycan Cd. No:41, 06490 Çankaya/Ankara, Türkiye",
+      "address": "Route, bahçelievler",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "New York tarzı lezzetler.",
@@ -129,7 +129,7 @@ const businesses = [
   },
   {
       "name": "Gloria Jeans",
-      "address": "Bahçelievler, 36. Sk. No:34, 06490 Çankaya/Ankara, Türkiye",
+      "address": "Gloria jeans, bahçelievler",
       "district": "Bahçelievler",
       "discount": 15,
       "details": "Dünya çapında kahve ve tatlılar.",
@@ -137,7 +137,7 @@ const businesses = [
   },
   {
       "name": "El Camino",
-      "address": "Prof. Dr. Muuammer Aksoy cad. No: 31/B Bahçelievler, Çankaya, Bahçelievler, 06490 Çankara/Ankara, Türkiye",
+      "address": "El camino, bahçelievler",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Çeşitli yemek ve içecekler.",
@@ -162,7 +162,7 @@ const businesses = [
   },
   {
       "name": "Komşu Meyhane",
-      "address": "Güvenevler, Farabi Sk. 32/B, 06500 Çankaya/Ankara, Türkiye",
+      "address": "Komşu meyhane, tunalı hilmi",
       "district": "Kızılay-Tunalı",
       "discount": 0,
       "details": "Ev yapımı lezzetler sunan bir restoran.",
@@ -171,7 +171,7 @@ const businesses = [
   {
       "name": "The Coffee Company",
       "address": "Çayyolu, Türkiye",
-      "district": "Çayyolu-Ümitköy",
+      "district": "Coffee company, çayyolu",
       "discount": 15,
       "details": "Kahve severler için geniş seçenekler.",
       "logo": "background-image.jpg"
@@ -179,7 +179,7 @@ const businesses = [
 
   {
       "name": "Kajun İncek Vista",
-      "address": "Kızılcaşar, Kajun İncek Vista, Incek Blv No:406/39, 06830 Gölbaşı/Ankara",
+      "address": "KajunToGo, incek vista",
       "district": "İncek",
       "discount": 10,
       "details": "Lezzetli Cajun yemekleri.",
@@ -187,7 +187,7 @@ const businesses = [
   },
   {
       "name": "Halanın Yeri",
-      "address": "Kızılcaşar, Zafer Cd. No:4 D:37 - E, 06830 Gölbaşı/Ankara, Türkiye",
+      "address": "Halanın yeri, incek",
       "district": "İncek",
       "discount": 5,
       "details": "Sıcak ve samimi bir ortamda yemek.",
@@ -195,7 +195,7 @@ const businesses = [
   },
   {
       "name": "Tarhana Kazanı",
-      "address": "Meşrutiyet, Kızılay, Selanik Cd 44/A, 06660 Çankaya/Ankara, Türkiye",
+      "address": "Tarhana kazanı, selanik/kızılay",
       "district": "Kızılay-Tunalı",
       "discount": 10,
       "details": "Lezzetli tarhana çorbası.",
@@ -203,7 +203,7 @@ const businesses = [
   },
   {
       "name": "Mersinli Ali Usta",
-      "address": "Kocatepe, Selanik Cd 29/a, 06420 Çankaya/Ankara, Türkiye.",
+      "address": "Mersinli ali usta, selanik/kızılay",
       "district": "Kızılay-Tunalı",
       "discount": 10,
       "details": "Mersinli Ali Usta'nın tantunisi, lezzetiyle ünlüdür. Kesinlikle denemelisiniz!",
@@ -211,7 +211,7 @@ const businesses = [
   },
   {
       "name": "Talya Veteriner",
-      "address": "Beytepe, Plevne Cd No:10/AA, 06800 Çankaya/Ankara, Türkiye",
+      "address": "Talya veteriner, beytepe",
       "district": "İncek",
       "discount": 10,
       "details": "Hayvan sağlığı için güvenilir veteriner hizmeti.",
@@ -219,7 +219,7 @@ const businesses = [
   },
   {
       "name": "Dino Dürüm",
-      "address": "Meşrutiyet, Konur Sok. No:51, 06420 Çankaya/Ankara, Türkiye.",
+      "address": "Dino dürüm, konur sokak",
       "district": "Kızılay-Tunalı",
       "discount": 10,
       "details": "Dino Dürüm'de taze ve lezzetli dürümler sizleri bekliyor.",
@@ -227,7 +227,7 @@ const businesses = [
   },
   {
       "name": "Esnaf Lokantaları",
-      "address": "Meşrutiyet, Karanfil Sk. No:37, 06420 Çankaya/Ankara, Türkiye.",
+      "address": "Esnaf lokantaları, karanfil sokak",
       "district": "Kızılay-Tunalı",
       "discount": 0,
       "details": "Esnaf Lokantası, samimi bir ortamda ev yemekleri sunar. Herkes için uygun fiyatlarla.",
@@ -235,7 +235,7 @@ const businesses = [
   },
   {
       "name": "Bahçelievler şubesi",
-      "address": "Yukarı Bahçelievler mahallesi 59 Sokak, Yukarı Bahçelievler, 54. Cad. 1/B, 06010 Çankaya/Ankara, Türkiye.",
+      "address": "Tunus ıslak hamburger, bahçelievler.",
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Bahçeli'deki Tunus Islak Hamburger, herkesin favorisi! Lezzetli ıslak hamburgerleri denemelisiniz.",
@@ -243,7 +243,7 @@ const businesses = [
   },
   {
       "name": "Meşrutiyet şubesi",
-      "address": "Kocatepe, Meşrutiyet Cd. 21/B, 06420 Çankaya/Ankara, Türkiye.",
+      "address": "Tunus ıslak hamburger, meşrutiyet.",
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Lezzetiyle ünlü olan Tunus Islak Hamburger, her damak zevkine hitap ediyor.",
@@ -251,7 +251,7 @@ const businesses = [
   },
   {
       "name": "Anıttepe şubesi",
-      "address": "Maltepe, Gençlik Cd. No:99 D:C, 06570 Çankaya/Ankara, Türkiye.",
+      "address": "Tunus ıslak hamburger, maltepe.",
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Anıttepe'deki Tunus Islak Hamburger, hızlı servisi ve lezzetiyle öne çıkıyor.",
@@ -259,7 +259,7 @@ const businesses = [
   },
   {
       "name": "Tunus şubesi",
-      "address": "Yukarı Bahçelievler mahallesi 59 Sokak, Yukarı Bahçelievler, 54. Cad. 1/B, 06010 Çankaya/Ankara, Türkiye.",
+      "address": "Tunus ıslak hamburger, tunus/tunalı",
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Tunus Islak Hamburger, sıcak ve taze hamburgerleriyle herkesin ilgisini çekiyor.",
@@ -267,7 +267,7 @@ const businesses = [
   },
   {
       "name": "Kolej şubesi",
-      "address": "Remzi Oğuz Arık, Tunus Cd NO:49/A, 06540 Çankaya/Ankara, Türkiye.",
+      "address": "Tunus ıslak hamburger, kolej.",
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Kolej bölgesinde Tunus Islak Hamburger ile doyurucu bir öğün geçirin.",
@@ -275,7 +275,7 @@ const businesses = [
   },
   {
       "name": "Altınoran şubesi",
-      "address": "İlkbahar, Güneypark No:32 No:1, 06550 Çankaya/Ankara, Türkiye.",
+      "address": "Nunchi Coffee, altınoran",
       "district": "Nunchi Coffee",
       "discount": 10,
       "details": "Nunchi Coffee, rahat bir ortamda keyifli kahve deneyimi sunuyor.",
@@ -283,7 +283,7 @@ const businesses = [
   },
   {
       "name": "Nokta şubesi",
-      "address": "Ümit, 2479. Cd. 2/33, 06810 Çankaya/Ankara, Türkiye.",
+      "address": "Nunchi Coffee, nokta",
       "district": "Nunchi Coffee",
       "discount": 10,
       "details": "Nokta'daki Nunchi Coffee, farklı kahve çeşitleriyle damak tadınıza hitap ediyor.",
@@ -291,7 +291,7 @@ const businesses = [
   },
   {
       "name": "Cepa şubesi",
-      "address": "Koru, 2558. Cad. No:8, 06810 Yenimahalle/Ankara, Türkiye.",
+      "address": "Nunchi Coffee, cepa",
       "district": "Nunchi Coffee",
       "discount": 10,
       "details": "Cepa'da Nunchi Coffee, kahve severler için harika bir buluşma noktası.",
@@ -299,7 +299,7 @@ const businesses = [
   },
   {
       "name": "Komagene",
-      "address": "Taşpınar, İsmail Gaspıralı Cd No:24, 06830 Gölbaşı/Ankara, Türkiye.",
+      "address": "Komagene, taşpınar incek",
       "district": "İncek",
       "discount": 15,
       "details": "Komagene'de sağlıklı ve lezzetli yiyecekler sizi bekliyor.",
@@ -307,7 +307,7 @@ const businesses = [
   },
   {
       "name": "Mojo and More",
-      "address": "Barbaros, Güniz Sk. 21A, 06680 Çankaya/Ankara, Türkiye.",
+      "address": "Mojo and more, tunalı",
       "district": "Kızılay-Tunalı",
       "discount": 10,
       "details": "Mojo'da keyifli bir atmosferde lezzetli yemekler yiyebilirsiniz.",
@@ -315,7 +315,7 @@ const businesses = [
   },
   {
       "name": "Chocolabs",
-      "address": "Yukarı Bahçelievler, Aşkabat Cd. No:6-B, 06490 Çankaya/Ankara, Türkiye.",
+      "address": "Chocolabs, bahçelievler",
       "district": "Bahçelievler",
       "discount": 10,
       "details": "Chocolabs, tatlı severler için vazgeçilmez bir durak!",
@@ -323,7 +323,7 @@ const businesses = [
   },
   {
       "name": "Clinic Çayyolu Dişçi",
-      "address": "Prof. Dr. Ahmet Taner Kışlalı Mah 2715. Sokak Konsept Çayyolu İş Merkezi, Prof. Dr. Ahmet Taner Kışlalı, D:2/3B, 06810 Çankaya/Ankara, Türkiye.",
+      "address": "Clinic çayyolu dişçi, çayyolu",
       "district": "Çayyolu-Ümitköy",
       "discount": 20,
       "details": "Çayyolu'ndaki dişçi kliniği, profesyonel hizmet sunuyor.",
