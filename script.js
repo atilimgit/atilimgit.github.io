@@ -128,7 +128,7 @@ const businesses = [
         //"logo": "background-image.jpg"
   },
   {
-      "name": "El Camino Food&Drinks",
+      "name": "El Camino",
       "address": "Prof. Dr. Muuammer Aksoy cad. No: 31/B Bahçelievler, Çankaya, Bahçelievler, 06490 Çankara/Ankara, Türkiye",
       "district": "Bahçeli",
       "discount": 10,
@@ -139,7 +139,7 @@ const businesses = [
       "name": "Komşu Restoran",
       "address": "Güvenevler, Farabi Sk. 32/B, 06500 Çankaya/Ankara, Türkiye",
       "district": "Tunalı",
-      "discount": 100,
+      "discount": 0,
       "details": "Ev yapımı lezzetler sunan bir restoran.",
         //"logo": "background-image.jpg"
   },
