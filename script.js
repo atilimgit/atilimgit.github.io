@@ -427,21 +427,25 @@ function displayBusinesses(filteredBusinesses) {
 
       const filtered = filteredBusinesses.filter(b => b.district === district);
       filtered.forEach(business => {
-          const businessCard = document.createElement('div');
-          businessCard.className = 'business-card';
-          businessCard.innerHTML = `
-              <div class="business-logo">${business.logo ? `<img src="${business.logo}" alt="${business.name} logo">` : business.name.charAt(0)}</div>
-              <div class="business-details">
-                  <div class="business-name">${business.name} <span class="discount">${business.discount}</span></div>
-                  <div class="business-detail">
-                      <button class="map-button" onclick="openMap('${encodeURIComponent(business.address)}')">Haritayı Aç</button>
-                  </div>
-              </div>
-          `;
-          
-          businessCard.addEventListener('click', () => showModal(business));
-          businessList.appendChild(businessCard);
-      });
+        const businessCard = document.createElement('div');
+        businessCard.className = 'business-card';
+        businessCard.innerHTML = `
+            <div class="business-logo" style="background-image: url('${business.logo}');">
+                ${business.logo ? '' : `<div class="pseudo-logo">${business.name.charAt(0)}</div>`}
+            </div>
+            <div class="business-details">
+                <div class="business-name">
+                    ${business.name}
+                    <span class="discount modern-discount"> %${business.discount}</span>
+                </div>
+                <div class="business-detail">
+                    <button class="map-button" onclick="openMap('${encodeURIComponent(business.address)}')">Haritayı Aç</button>
+                </div>
+            </div>
+        `;
+        businessCard.addEventListener('click', () => showModal(business));
+        businessList.appendChild(businessCard);
+    });    
   });
 }
 function openMap(address) {
