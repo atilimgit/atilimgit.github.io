@@ -474,6 +474,7 @@ function displayBusinesses(filteredBusinesses) {
     });    
   });
 }
+
 function openMap(address) {
   const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
   const mapsUrl = isIOS 
@@ -484,12 +485,12 @@ function openMap(address) {
 }
 
 
-
 function showModal(business) {
     document.getElementById('modal-business-name').textContent = business.name;
-    document.getElementById('modal-business-address').textContent = `Adres: ${business.address}`;
-    document.getElementById('modal-business-discount').textContent = `İndirim: ${business.discount}`;
-    document.getElementById('modal-business-details').textContent = business.details;
+    document.getElementById('modal-business-address').innerHTML = `🚩 Adres: <strong><em>${business.address}</em></strong>`;
+    document.getElementById('modal-business-discount').innerHTML = `💰 İndirim: <strong><em>${business.discount}</em></strong>`;
+    
+    document.getElementById('modal-business-details').innerHTML = `<em><u>${business.details}</u></em>`;
 
     const modal = document.getElementById('business-modal');
     modal.style.display = 'block';
