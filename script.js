@@ -170,7 +170,7 @@ const businesses = [
   },
   {
       "name": "The Coffee Company",
-      "address": "Coffee company, çayyolu",
+      "address": "The coffee company, çayyolu",
       "district": "Çayyolu-Ümitköy",
       "discount": 15,
       "details": "Kahve severler için geniş seçenekler.",
