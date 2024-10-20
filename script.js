@@ -313,6 +313,34 @@ const businesses = [
   }
 ];
 
+
+businesses.forEach(business => {
+  const card = document.createElement('div');
+  card.className = 'business-card';
+  const discountLabel = document.createElement('div');
+  discountLabel.className = 'discount-label';
+  discountLabel.innerText = business.discount; // İndirim oranını buraya yaz
+
+  const logoElement = document.createElement('div');
+  logoElement.className = 'business-logo';
+  if (business.logo) {
+      logoElement.style.backgroundImage = `url(${business.logo})`;
+  } else {
+      logoElement.innerHTML = `<span class="logo-initial">${business.name.charAt(0).toUpperCase()}</span>`;
+  }
+
+  const nameElement = document.createElement('div');
+  nameElement.className = 'business-name';
+  nameElement.innerText = business.name;
+
+
+  card.appendChild(discountLabel);
+  card.appendChild(logoElement);
+  card.appendChild(nameElement);
+
+  document.getElementById('business-list').appendChild(card);
+});
+
 const itemsPerPage = 10;
 let currentPage = 1;
 
