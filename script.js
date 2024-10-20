@@ -239,7 +239,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Bahçeli'deki Tunus Islak Hamburger, herkesin favorisi! Lezzetli ıslak hamburgerleri denemelisiniz.",
-      //"logo": "tunus.png"
+      "logo": "background-image.jpg"
   },
   {
       "name": "Meşrutiyet şubesi",
@@ -247,7 +247,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Lezzetiyle ünlü olan Tunus Islak Hamburger, her damak zevkine hitap ediyor.",
-      //"logo": "tunus.png"
+      "logo": "background-image.jpg"
   },
   {
       "name": "Anıttepe şubesi",
@@ -255,7 +255,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Anıttepe'deki Tunus Islak Hamburger, hızlı servisi ve lezzetiyle öne çıkıyor.",
-      //"logo": "tunus.png"
+      "logo": "background-image.jpg"
   },
   {
       "name": "Tunus şubesi",
@@ -263,7 +263,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Tunus Islak Hamburger, sıcak ve taze hamburgerleriyle herkesin ilgisini çekiyor.",
-      //"logo": "tunus.png"
+      "logo": "background-image.jpg"
   },
   {
       "name": "Kolej şubesi",
@@ -271,7 +271,7 @@ const businesses = [
       "district": "Tunus Islak Hamburger",
       "discount": 10,
       "details": "Kolej bölgesinde Tunus Islak Hamburger ile doyurucu bir öğün geçirin.",
-      //"logo": "tunus.png"
+      "logo": "background-image.jpg"
   },
   {
       "name": "Altınoran şubesi",
@@ -487,8 +487,8 @@ function openMap(address) {
 
 function showModal(business) {
     document.getElementById('modal-business-name').textContent = business.name;
-    document.getElementById('modal-business-address').innerHTML = `🚩 Adres: <strong><em>${business.address}</em></strong>`;
-    document.getElementById('modal-business-discount').innerHTML = `💰 İndirim: <strong><em>${business.discount}</em></strong>`;
+    document.getElementById('modal-business-address').innerHTML = `🚩 Adres: <strong><${business.address}</strong>`;
+    document.getElementById('modal-business-discount').innerHTML = `💰 İndirim: <strong>%${business.discount}</strong>`;
     
     document.getElementById('modal-business-details').innerHTML = `<em><u>${business.details}</u></em>`;
 
