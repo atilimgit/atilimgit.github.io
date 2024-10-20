@@ -109,9 +109,9 @@ h1 {
     color: #FFD700;
     font-weight: bold;
     background: rgba(255, 255, 255, 0.2);
-    padding: 5px 10px;
+    padding: 5px 8px;
     border-radius: 10px;
-    margin-left: 10px; /* İşletme adı ile indirim oranı arasında boşluk */
+    margin-left: 6px; /* İşletme adı ile indirim oranı arasında boşluk */
 }
 
 .business-address {
