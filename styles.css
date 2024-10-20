@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-image: url('background-image.jpg');
     background-size: cover;
@@ -18,65 +17,6 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lato:wght@400;700&display=swap');
 
-@media (max-width: 768px) {
-    .business-card {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-        transition: transform 0.3s;
-        border-radius: 15px;
-        background: rgba(255, 255, 255, 0.2);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .business-logo {
-        width: 50px;
-        height: 50px;
-        background-size: cover;
-        background-position: center;
-        border-radius: 50%;
-        margin-right: 10px;
-        display: inline-block;
-    }
-    .pseudo-logo {
-        width: 50px; 
-        height: 50px; 
-        background-color: #ccc; 
-        color: white; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%; 
-        font-size: 20px; 
-        font-weight: bold; 
-    }
-
-    .business-name {
-        font-size: 1.5em; 
-        font-weight: 600;
-        color: #ffd700;
-    }
-
-    .business-detail {
-        font-size: 0.9em;
-    }
-
-    .modal-content {
-        width: 90%;
-    }
-}
-.pseudo-logo {
-        width: 50px; 
-        height: 50px; 
-        background-color: #ccc; 
-        color: white; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%; 
-        font-size: 20px; 
-        font-weight: bold; 
-}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -87,17 +27,18 @@ body {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
 }
 
+h1 {
+    color: #ffd700;
+    margin-bottom: 20px;
+    font-size: 2em; 
+}
+
 h3 {
     font-size: 1.4em;
     font-weight: bold;
     text-align: left;
     padding: 10px 0;
     border-bottom: 2px solid #FFD700; 
-}
-h1 {
-    color: #ffd700;
-    margin-bottom: 20px;
-    font-size: 2em; 
 }
 
 .discount {
@@ -120,14 +61,13 @@ h1 {
     background-color: #ffcc00; 
 }
 
-
 .modern-discount {
     background-color: rgba(255, 215, 0, 0.7);
     color: #000;
-    padding: 2px 4px; /* Daha az iç boşluk */
-    border-radius: 8px; /* Yuvarlatılmış köşeler */
+    padding: 2px 4px;
+    border-radius: 8px;
     font-weight: bold;
-    font-size: 0.7em; /* Daha küçük yazı boyutu */
+    font-size: 0.7em; 
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
     margin-left: 5px;
     transition: background-color 0.3s;
@@ -137,18 +77,16 @@ h1 {
     background-color: rgba(255, 215, 0, 0.9);
 }
 
-
 .business-address {
-    color: #B0B0B0; /* Açık gri renk */
-    text-decoration: underline; /* Altı çizili */
-    cursor: pointer; /* İmleç değiştirme */
+    color: #B0B0B0; 
+    text-decoration: underline; 
+    cursor: pointer; 
     transition: color 0.3s;
 }
 
 .business-address:hover {
-    color: #FFD700; /* Hover durumunda sarı renk */
+    color: #FFD700; 
 }
-
 
 input[type="text"],
 select {
@@ -172,13 +110,6 @@ select:focus {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-.filter-group select {
-    width: 150px;
-    padding: 10px;
-    font-size: 16px;
-    color: #fff; 
 }
 
 .info-text {
@@ -299,42 +230,41 @@ footer {
     color: #fff;
     animation: fadeIn 0.5s;
 }
+
 .business-counter {
     background-color: #1a1a1a;
-    border-radius: 8px; /* Yuvarlatılmış köşeler */
-    padding: 15px; /* İç boşluk */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Hafif gölge */
-    text-align: center; /* Ortala */
-    margin: 20px 0; /* Üst ve alt boşluk */
+    border-radius: 8px;
+    padding: 15px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    text-align: center; 
+    margin: 20px 0; 
 }
 
-
 .business-counter h2 {
-    font-size: 20px; /* Daha küçük bir font boyutu */
-    font-weight: 500; /* Orta kalınlıkta yazı */
-    color: #B0B0B0; /* Açık gri renk */
-    letter-spacing: 0.5px; /* Harfler arasında boşluk */
-    margin: 0; /* Varsayılan margin'i sıfırla */
+    font-size: 20px; 
+    font-weight: 500; 
+    color: #B0B0B0; 
+    letter-spacing: 0.5px; 
+    margin: 0; 
 }
 
 .business-counter span {
-    font-size: 28px; /* Daha büyük bir font boyutu */
-    font-weight: 700; /* Kalın yazı */
-    color: #FFD700; /* Sarı renk */
-    display: block; /* Yeni satıra geç */
-    margin-top: 5px; /* Üst boşluk ekle */
-    transition: color 0.3s ease; /* Renk geçişi */
+    font-size: 28px; 
+    font-weight: 700; 
+    color: #FFD700; 
+    display: block; 
+    margin-top: 5px; 
+    transition: color 0.3s; 
 }
 
 .business-counter span:hover {
-    color: #FFC107; /* Daha koyu sarı hover durumu */
+    color: #FFC107; 
 }
 
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
 
 .close-button {
     color: #ffd700;
@@ -347,4 +277,46 @@ footer {
 .close-button:hover,
 .close-button:focus {
     color: #fff;
+}
+
+/* Mobil uyumluluk ve modernleştirme */
+@media (max-width: 768px) {
+    .business-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px; /* Daha az padding */
+    }
+
+    .business-logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .business-name {
+        font-size: 1.5em; /* Mobil için ayarlandı */
+    }
+
+    .business-detail {
+        font-size: 0.9em; /* Mobil için ayarlandı */
+    }
+
+    .map-button {
+        font-size: 0.8em; /* Mobil buton boyutu */
+        padding: 8px 12px; /* Daha az padding */
+    }
+
+    h1, h3 {
+        font-size: 1.5em; /* Başlık boyutları mobilde küçültüldü */
+    }
+
+    .modal-content {
+        width: 90%; /* Modal genişliği mobilde küçültüldü */
+    }
+
+    .pagination {
+        flex-direction: column; /* Sayfa numaralarını alt alta yerleştir */
+        align-items: center;
+    }
 }
