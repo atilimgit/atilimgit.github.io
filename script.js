@@ -179,7 +179,7 @@ const businesses = [
 
   {
       "name": "Kajun İncek Vista",
-      "address": "KajunToGo, incek vista",
+      "address": "Kajun İncek Vista",
       "district": "İncek",
       "discount": 10,
       "details": "Lezzetli Cajun yemekleri.",
