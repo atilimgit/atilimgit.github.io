@@ -16,6 +16,14 @@ const businesses = [
     "logo": "background-image.jpg"
   },
   {
+    "name": "Atılım Store",
+    "address": "Kızılcaşar mahallesi, 1184. cad no:13, 06830 İncek, Gölbaşı/Ankara.",
+    "district": "İncek",
+    "discount": 15,
+    "details": "Atılım Store, öğrencilere özel indirimlerle kaliteli ürünler sunuyor.",
+    "logo": "background-image.jpg"
+  },
+  {
       "name": "KajunToGo",
       "address": "Yaşamkent, 3250. Cd. no 26 D:51, 06810 Çankaya/Ankara, Türkiye",
       "district": "Çayyolu-Ümitköy",
@@ -168,14 +176,7 @@ const businesses = [
       "details": "Kahve severler için geniş seçenekler.",
       "logo": "background-image.jpg"
   },
-  {
-      "name": "Atılım Store",
-      "address": "Kızılcaşar mahallesi, 1184. cad no:13, 06830 İncek, Gölbaşı/Ankara.",
-      "district": "İncek",
-      "discount": 15,
-      "details": "Atılım Store, öğrencilere özel indirimlerle kaliteli ürünler sunuyor.",
-      "logo": "background-image.jpg"
-  },
+
   {
       "name": "Kajun İncek Vista",
       "address": "Kızılcaşar, Kajun İncek Vista, Incek Blv No:406/39, 06830 Gölbaşı/Ankara",
