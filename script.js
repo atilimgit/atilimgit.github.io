@@ -1,5 +1,13 @@
 const businesses = [
   {
+      "name": "Espresso Check",
+      "address": "Bahçelievler, Prof. Muammer Aksoy Cd No:37/A, 06490 Çankaya/Ankara, Türkiye",
+      "district": "Bahçelievler",
+      "discount": 25,
+      "details": "Kahvenizin her yudumunda kalite.",
+      "logo": "background-image.jpg"
+  },
+  {
       "name": "KajunToGo",
       "address": "Yaşamkent, 3250. Cd. no 26 D:51, 06810 Çankaya/Ankara, Türkiye",
       "district": "Çayyolu-Ümitköy",
@@ -21,14 +29,6 @@ const businesses = [
       "district": "Çayyolu-Ümitköy",
       "discount": 10,
       "details": "Taze malzemelerle hazırlanmış enfes hamburgerler.",
-      "logo": "background-image.jpg"
-  },
-  {
-      "name": "Talya Veteriner",
-      "address": "Beytepe, Plevne Cd No:10/AA, 06800 Çankaya/Ankara, Türkiye",
-      "district": "İncek",
-      "discount": 10,
-      "details": "Hayvan sağlığı için güvenilir veteriner hizmeti.",
       "logo": "background-image.jpg"
   },
   {
@@ -79,14 +79,7 @@ const businesses = [
       "details": "Eğlenceli atmosferde içkilerin tadını çıkarın.",
       "logo": "background-image.jpg"
   },
-  {
-      "name": "Espresso Check",
-      "address": "Bahçelievler, Prof. Muammer Aksoy Cd No:37/A, 06490 Çankaya/Ankara, Türkiye",
-      "district": "Bahçelievler",
-      "discount": 25,
-      "details": "Kahvenizin her yudumunda kalite.",
-      "logo": "background-image.jpg"
-  },
+
   {
       "name": "Banana Pudding",
       "address": "Yukarı Bahçelievler, 70. Sk. No:21 D:C, 06490 Çankaya/Ankara, Türkiye",
@@ -152,6 +145,14 @@ const businesses = [
       "logo": "background-image.jpg"
   },
   {
+    "name": "Atılım Store",
+    "address": "Kızılcaşar mahallesi, 1184. cad no:13, 06830 İncek, Gölbaşı/Ankara.",
+    "district": "İncek",
+    "discount": 15,
+    "details": "Atılım Store, öğrencilere özel indirimlerle kaliteli ürünler sunuyor.",
+    "logo": "background-image.jpg"
+  },
+  {
       "name": "Kajun İncek Vista",
       "address": "Kızılcaşar, Kajun İncek Vista, Incek Blv No:406/39, 06830 Gölbaşı/Ankara",
       "district": "İncek",
@@ -184,6 +185,14 @@ const businesses = [
       "logo": "background-image.jpg"
   },
   {
+    "name": "Talya Veteriner",
+    "address": "Beytepe, Plevne Cd No:10/AA, 06800 Çankaya/Ankara, Türkiye",
+    "district": "İncek",
+    "discount": 10,
+    "details": "Hayvan sağlığı için güvenilir veteriner hizmeti.",
+    "logo": "background-image.jpg"
+  },
+  {
       "name": "Dino Dürüm",
       "address": "Meşrutiyet, Konur Sok. No:51, 06420 Çankaya/Ankara, Türkiye.",
       "district": "Kızılay-Tunalı",
@@ -199,14 +208,7 @@ const businesses = [
       "details": "Esnaf Lokantası, samimi bir ortamda ev yemekleri sunar. Herkes için uygun fiyatlarla.",
       "logo": "background-image.jpg"
   },
-  {
-      "name": "Atılım Store",
-      "address": "Kızılcaşar mahallesi, 1184. cad no:13, 06830 İncek, Gölbaşı/Ankara.",
-      "district": "İncek",
-      "discount": 15,
-      "details": "Atılım Store, öğrencilere özel indirimlerle kaliteli ürünler sunuyor.",
-      "logo": "background-image.jpg"
-  },
+
   {
       "name": "Bahçelievler şubesi",
       "address": "Yukarı Bahçelievler mahallesi 59 Sokak, Yukarı Bahçelievler, 54. Cad. 1/B, 06010 Çankaya/Ankara, Türkiye.",
