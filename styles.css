@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-image: url('background-image.jpg');
     background-size: cover;
@@ -20,7 +21,7 @@ body {
 @media (max-width: 768px) {
     .business-card {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         padding: 10px;
         transition: transform 0.3s;
         border-radius: 15px;
@@ -86,17 +87,17 @@ body {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
 }
 
-h1 {
-    color: #ffd700;
-    margin-bottom: 20px;
-    font-size: 2em; 
-}
 h3 {
     font-size: 1.4em;
     font-weight: bold;
     text-align: left;
     padding: 10px 0;
     border-bottom: 2px solid #FFD700; 
+}
+h1 {
+    color: #ffd700;
+    margin-bottom: 20px;
+    font-size: 2em; 
 }
 
 input[type="text"],
@@ -148,25 +149,26 @@ select:focus {
     margin-top: 20px;
 }
 
-.business-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
 .business-card {
     display: flex;
     align-items: center;
-    justify-content: center; /* Tam ortala */
     padding: 20px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     background: rgba(30, 30, 30, 0.8);
 }
 
+.business-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
 .business-logo {
     width: 70px;
     height: 70px;
+    margin-right: 15px;
     border-radius: 50%;
+    border: 2px solid #ffd700;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,15 +176,12 @@ select:focus {
     color: #888; 
     font-size: 1.5em; 
     font-weight: bold;
-    flex-shrink: 0;
 }
 
 .business-name {
     font-size: 1.5em; 
     color: #ffd700;
-    margin-left: 15px; 
-    text-align: center; /* Metni ortala */
-    flex-grow: 1; /* Genişliği kapla */
+    margin-left: 15px;
 }
 
 .business-detail p {
