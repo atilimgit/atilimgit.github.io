@@ -299,7 +299,7 @@ const businesses = [
   },
   {
       "name": "Komagene",
-      "address": "Komagene, taşpınar incek",
+      "address": "Komagene, incek",
       "district": "İncek",
       "discount": 15,
       "details": "Komagene'de sağlıklı ve lezzetli yiyecekler sizi bekliyor.",
