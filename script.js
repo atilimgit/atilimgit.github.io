@@ -564,7 +564,8 @@ function openMap(address) {
 function showModal(business) {
     document.getElementById('modal-business-name').textContent = business.name;
     document.getElementById('modal-business-address').innerHTML = `🚩 Adres: <strong>${business.address}</strong>`;
-    document.getElementById('modal-business-discount').innerHTML = `💰 İndirim: <strong>%${business.discount}</strong>`;
+    document.getElementById('modal-business-discount').innerHTML = `
+    💰 İndirim: <strong>${Number.isInteger(business.discount) ? `%${business.discount}` : business.discount}</strong>`;
     
     document.getElementById('modal-business-details').innerHTML = `<em><u>${business.details}</u></em>`;
 
