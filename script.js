@@ -532,10 +532,12 @@ function displayBusinesses(filteredBusinesses) {
                 ${business.logo ? '' : `<div class="pseudo-logo">${business.name.charAt(0)}</div>`}
             </div>
             <div class="business-details">
-                <div class="business-name">
-                    ${business.name}
-                    <span class="discount modern-discount"> %${business.discount}</span>
-                </div>
+            <div class="business-name">
+              ${business.name}
+                <span class="discount modern-discount">
+                  ${Number.isInteger(business.discount) ? `%${business.discount}` : business.discount}
+                </span>
+            </div>
                 <div class="business-detail">
                     <button class="map-button" onclick="openMap('${encodeURIComponent(business.address)}')">Haritayı Aç</button>
                 </div>
