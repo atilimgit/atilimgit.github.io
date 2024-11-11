@@ -27,7 +27,7 @@ const businesses = [
     "name": "Tatam Makarna",
     "address": "Tatam makarna, bahçelievler",
     "district": "Bahçelievler",
-    "discount": 10,
+    "discount": 15,
     "details": "Leziz makarnalar sizleri bekliyor!",
     "logo": "tatam.png"
   },
