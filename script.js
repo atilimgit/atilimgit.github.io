@@ -191,7 +191,7 @@ const businesses = [
     "district": "Bahçelievler",
     "discount": 10,
     "details": "Sağlıklı salatalar ve fazlası",
-    //"logo": "chopnblend.jpg"
+    "logo": "chopnblend.png"
   },
   {
     "name": "Tatam Makarna",
@@ -199,7 +199,7 @@ const businesses = [
     "district": "Bahçelievler",
     "discount": 15,
     "details": "Leziz makarnalar sizleri bekliyor!",
-    //"logo": "tatam.png"
+    "logo": "tatam.jpg"
   },
   {
     "name": "Italian Cut",
@@ -207,7 +207,7 @@ const businesses = [
     "district": "Bahçelievler",
     "discount": 10,
     "details": "Envai çeşit pizza sizi bekliyor.",
-    //"logo": "italiancut.png"
+    "logo": "italiancut.jpg"
   },
   {
       "name": "Halanın Yeri",
