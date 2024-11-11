@@ -253,7 +253,7 @@ const businesses = [
       "name": "Esnaf Lokantaları",
       "address": "Esnaf lokantaları, kızılay",
       "district": "Kızılay-Tunalı",
-      "discount": 0,
+      "discount": "İKRAM",
       "details": "Esnaf Lokantası, samimi bir ortamda ev yemekleri sunar. Herkes için uygun fiyatlarla.",
       "logo": "esnaf.jpg"
   },
@@ -428,7 +428,9 @@ function showBusinessDetails(business) {
     
     modalBusinessName.innerText = business.name;
     modalBusinessAddress.innerHTML = `${locationEmoji} <strong>Adres:</strong> <u>${business.address}</u>`;
-    modalBusinessDiscount.innerHTML = `${discountEmoji} <strong>İndirim oranı:</strong> %${business.discount}\n`;
+    modalBusinessDiscount.innerHTML = `
+    ${discountEmoji} <strong>İndirim oranı:</strong> 
+    ${Number.isInteger(business.discount) ? `%${business.discount}` : business.discount}`;
     modalBusinessDetails.innerText = business.details;
 
     modal.style.display = "block";
