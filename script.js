@@ -354,6 +354,54 @@ const businesses = [
       //"logo": "background-image.jpg"
   },
   {
+      "name": "Beytepe şubesi",
+      "address": "Midyeci yalçın, beytepe",
+      "district": "Midyeci Yalçın",
+      "discount": 10,
+      "details": "Midyeci yalçının eşsiz midyeleri ile buluşun.",
+      //"logo": "background-image.jpg"
+  },
+  {
+      "name": "Yenikent şubesi",
+      "address": "Midyeci yalçın, yenikent",
+      "district": "Midyeci Yalçın",
+      "discount": 10,
+      "details": "Midyeci yalçının eşsiz midyeleri ile buluşun.",
+      //"logo": "background-image.jpg"
+  },
+  {
+      "name": "Keçiören şubesi",
+      "address": "Midyeci yalçın, keçiören",
+      "district": "Midyeci Yalçın",
+      "discount": 10,
+      "details": "Midyeci yalçının eşsiz midyeleri ile buluşun.",
+      //"logo": "background-image.jpg"
+  },
+  {
+      "name": "Sincan şubesi",
+      "address": "Midyeci yalçın, sincan",
+      "district": "Midyeci Yalçın",
+      "discount": 10,
+      "details": "Midyeci yalçının eşsiz midyeleri ile buluşun.",
+      //"logo": "background-image.jpg"
+  },
+  {
+      "name": "Batıkent şubesi",
+      "address": "Midyeci yalçın, batıkent",
+      "district": "Midyeci Yalçın",
+      "discount": 10,
+      "details": "Midyeci yalçının eşsiz midyeleri ile buluşun.",
+      //"logo": "background-image.jpg"
+  },
+  {
+      "name": "Çubuk şubesi",
+      "address": "Midyeci yalçın, çubuk",
+      "district": "Midyeci Yalçın",
+      "discount": 10,
+      "details": "Midyeci yalçının eşsiz midyeleri ile buluşun.",
+      //"logo": "background-image.jpg"
+  },
+  {
       "name": "MackBear",
       "address": "Kızılcaşar, Yavuz Sultan Selim Blv A-1 BLOK NO: 7/A İç Kapı No: 183, 06830 Gölbaşı/Ankara.",
       "district": "İncek",
