@@ -164,7 +164,7 @@ const businesses = [
       "name": "Komşu Meyhane",
       "address": "Komşu meyhane, tunalı",
       "district": "Kızılay-Tunalı",
-      "discount": 0,
+      "discount": "100 TL",
       "details": "Ev yapımı lezzetler sunan bir restoran.",
       "logo": "komsu.jpg"
   },
