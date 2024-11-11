@@ -16,6 +16,30 @@ const businesses = [
     "logo": "zaytung.png"
   },
   {
+    "name": "Chop N Blend",
+    "address": "Chop N Blend, bahçelievler",
+    "district": "Bahçelievler",
+    "discount": 10,
+    "details": "Sağlıklı salatalar ve fazlası",
+    "logo": "chopnblend.jpg"
+  },
+  {
+    "name": "Tatam Makarna",
+    "address": "Tatam makarna, bahçelievler",
+    "district": "Bahçelievler",
+    "discount": 10,
+    "details": "Leziz makarnalar sizleri bekliyor!",
+    "logo": "tatam.png"
+  },
+  {
+    "name": "Italian Cut",
+    "address": "italian cut, bahçelievler",
+    "district": "Bahçelievler",
+    "discount": 10,
+    "details": "Envai çeşit pizza sizi bekliyor.",
+    "logo": "italiancut.png"
+  },
+  {
     "name": "Atılım Store",
     "address": "Atılım store. kampüs",
     "district": "İncek",
