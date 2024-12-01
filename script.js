@@ -143,6 +143,14 @@ const businesses = [
       "details": "Çeşitli yemek ve içecekler.",
       "logo": "elcamino.jpg"
   },
+    {
+      "name": "Emek Tomruk",
+      "address": "Emek tomrum, emek",
+      "district": "Bahçelievler",
+      "discount": 15,
+      "details": "Leziz yemekler ve ikramlar! (diğer adıyla Köfteci ALA) ",
+      //"logo": "elcamino.jpg"
+  },
 
   {
     "name": "Altı Üstü Bar",
