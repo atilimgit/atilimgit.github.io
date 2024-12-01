@@ -71,6 +71,14 @@ const businesses = [
       "details": "Ev yapımı lezzetli tatlılar.",
       "logo": "cakeart.png"
   },
+      {
+      "name": "Emek Tomruk",
+      "address": "Emek, Bişkek Cd. NO:70/C, 06490 Çankaya/Ankara",
+      "district": "Bahçelievler",
+      "discount": 15,
+      "details": "Leziz yemekler ve ikramlar! (diğer adıyla Köfteci ALA) ",
+      //"logo": "elcamino.jpg"
+  },
   {
       "name": "Agartha Pub",
       "address": "Agartha Pub, bahçelievler, muammer aksoy caddesi",
@@ -143,14 +151,7 @@ const businesses = [
       "details": "Çeşitli yemek ve içecekler.",
       "logo": "elcamino.jpg"
   },
-    {
-      "name": "Emek Tomruk",
-      "address": "Emek tomruk Çankaya",
-      "district": "Bahçelievler",
-      "discount": 15,
-      "details": "Leziz yemekler ve ikramlar! (diğer adıyla Köfteci ALA) ",
-      //"logo": "elcamino.jpg"
-  },
+
 
   {
     "name": "Altı Üstü Bar",
