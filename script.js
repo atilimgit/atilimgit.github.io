@@ -218,6 +218,14 @@ const businesses = [
       //"logo": "background-image.jpg"
   },
   {
+    "name": "Sanat Sokağı",
+    "address": "Sanat sokağı, kızılay",
+    "district": "Kızılay-Tunalı",
+    "discount": 15,
+    "details": "Alkollü ürünlerde indirim %10 olarak uygulanacaktır.",
+    //"logo": "tiyatro.jpg"
+  },
+  {
       "name": "Tarhana Kazanı",
       "address": "Tarhana kazanı, selanik/kızılay",
       "district": "Kızılay-Tunalı",
