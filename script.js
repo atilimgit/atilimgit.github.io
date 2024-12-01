@@ -145,7 +145,7 @@ const businesses = [
   },
     {
       "name": "Emek Tomruk",
-      "address": "Emek tomruk, emek",
+      "address": "Emek tomruk Çankaya",
       "district": "Bahçelievler",
       "discount": 15,
       "details": "Leziz yemekler ve ikramlar! (diğer adıyla Köfteci ALA) ",
